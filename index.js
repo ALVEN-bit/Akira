@@ -894,12 +894,13 @@ client.on(`message`, async (message) => {
     .setTimestamp()
     .setDescription(`
 
-[{Support}](https://discord.gg/progresshome)
+[{Support}](https://discord.gg/wTESwYkdwY)
 
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
+[{Invite}](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 
 **{Developers Bot}** :
-Dev/<@701546840063082601>
+Dev/<@!680407776593182735>
+Dev/<@!716796150656794645>
 
 **{Set Status}** :
 Online
@@ -927,13 +928,13 @@ $
     .setDescription (`
 {Links}
 
-[{Support}](https://discord.gg/progresshome)
+[{Support}](https://discord.gg/wTESwYkdwY)
 -
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)`)
+[{Invite}](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
-    .setTitle(`**{Support  Panda Bot}**`) 
-    .setThumbnail(`https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png `)
+    .setTitle(`**{Support Pop Music }**`) 
+    .setThumbnail(``)
     .setTimestamp()
     
     //send the Message
