@@ -25,9 +25,9 @@ module.exports = {
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
 \`tinvites\` - \`sug\` - \`roleuser\`
-\`report\`
+\`report\` - \`se\`
  
-<a:emoji_16:855060728779374652> | **Music Commands**
+<a:emoji_39:862473578799955969> | **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
 \`stop\` - \`volume\` - \`nowplaying\`
 \`shuffle\` - \`search\` - \`resume\`
@@ -48,13 +48,13 @@ module.exports = {
 **Text Commands**
 \`Comming Soon\`
 
- **Game Commands**
+<a:emoji_40:862473590213705768> | **Game Commands**
 \`kiss\` - \`slap\` - \`hug\`
 
 **Economy Commands**
 \`Comming Soon\`
 
-**Links**
+<a:emoji_24:856306109940629544> | **Links**
 [**Support**](https://discord.gg/wTESwYkdwY) | [**Invite**](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
