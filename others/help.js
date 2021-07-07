@@ -17,7 +17,6 @@ module.exports = {
     let helpEmbed = new MessageEmbed()
     .setThumbnail(``)
     .setTitle(`**Pop Music Help**`)
-    .setimage(`https://media.discordapp.net/attachments/840964404639170610/862468222096113685/image0.gif`)
     .setDescription(`
 *** Prefix bot ***
 ***__,__***
