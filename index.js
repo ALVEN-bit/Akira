@@ -306,15 +306,7 @@ Server id: __${guild.id}__
 Server Count: __${guild.memberCount}__**`);
 });
 
-const channelid = "860205351819411456"    //id channele vc
-client.on("ready", () => {
-    const channel = client.channels.cache.get(channelid);
-    if (!channel) return console.error("The channel does not exist!");
-    channel.join().then(connection => {
-        console.log("Successfully connected.");
-    }).catch(e => {
-        console.error(e);
-    });
+
 });
 
 client.on("message", message => {
