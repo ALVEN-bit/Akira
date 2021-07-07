@@ -898,18 +898,30 @@ client.on(`message`, async (message) => {
 
 [{Invite}](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 
-**{Developers Bot}** :
-Dev/<@!680407776593182735>
-Dev/<@!716796150656794645>
+**My Devloper :**
+<@!680407776593182735>
+<@!716796150656794645>
 
-**{Set Status}** :
-Online
+**Pop Bot**
+\`Music\`
+ 
+**Servers **
+\`${client.guilds.cache.size}\`
 
-**{Time Create}** :
-3/3/2020
+**Channels ** 
+\`${client.channels.cache.size}\` 
 
-**{Prefix Bot}** :
-**,**
+**My Name **
+\`${client.user.tag}\`
+
+**My ID **
+\`${client.user.id}\`
+
+**My Ping **
+\`${client.ws.ping}\`
+
+**Version **
+\`V2\`
 
 `)
 
