@@ -21,26 +21,26 @@ module.exports = {
     .setDescription(`
 *** Prefix bot ***
 ***__,__***
-**User Commands**
+<a:emoji_17:855062869934080030> | **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
 \`tinvites\` - \`sug\` - \`roleuser\`
 \`report\`
  
-**Music Commands**
+<a:emoji_16:855060728779374652> | **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
 \`stop\` - \`volume\` - \`nowplaying\`
 \`shuffle\` - \`search\` - \`resume\`
 \`remove\` - \`queue\` - \`loop\`
 \`lyrics\` - \`radio\`
 
-**Moderation Commands**
+<a:emoji_19:855064009639329812> | **Moderation Commands**
 \`ban\` - \`unban\` - \`setnick\`
 \`roleadd\` - \`roleremove\` - \`vkick\`
 \`setprefix\` - \`clear\` - \`close\`
 \`open\` - \`senddm\`
  
-**Gif Commands**
+<a:emoji_33:856616986422935583> | **Gif Commands**
 \`boy\` - \`girl\` - \`couple\`
 \`sad\` - \`cartoon\` - \`anime\`
 \`neon\`
