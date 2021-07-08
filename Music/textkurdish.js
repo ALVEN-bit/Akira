@@ -1,6 +1,6 @@
-const Discord = require("discord.js");
-const { MessageEmbed } = require("discord.js");
-const { Prefix } = require("../../config.js");
+const Discord = require("../util/MilratoUtil");
+const { MessageEmbed } = require("../util/MilratoUtil");
+const { Prefix } = require("../util/MilratoUtil");
 
 module.exports = {
   name: "textkurdish",
