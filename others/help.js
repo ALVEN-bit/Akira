@@ -46,8 +46,9 @@ module.exports = {
 \`neon\`
 
 **Text Commands**
-\`textkurdish\` - \`textenglish\` - \`textarabic\`
-\`textturkish\` - \`textpersian\`
+\`textkurdish\` - \`textenglish\`
+\`textarabic\` - \`textturkish\`
+\`textpersian\`
 
 <a:emoji_40:862473590213705768> | **Game Commands**
 \`kiss\` - \`slap\` - \`hug\`
