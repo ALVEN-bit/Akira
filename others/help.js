@@ -21,6 +21,7 @@ module.exports = {
     .setDescription(`
 *** Prefix bot ***
 ***__,__***
+
 <a:emoji_17:855062869934080030> | **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
@@ -55,8 +56,6 @@ module.exports = {
 \`feed\` - \`cuddle\` - \`pat\`
 \`poke\`
 
-**Economy Commands**
-\`Comming Soon\`
 
 <a:emoji_24:856306109940629544> | **Links**
 [**Support**](https://discord.gg/wTESwYkdwY) | [**Invite**](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
