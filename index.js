@@ -916,10 +916,7 @@ client.on(`message`, async (message) => {
    const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
-     return message.reply(
-      new MessageEmbed().setColor("RANDOM")
-      .setTitle(`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `)    
-     );
+     return message.reply(`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `);
    }
  }
  timestamps.set(message.author.id, now);
