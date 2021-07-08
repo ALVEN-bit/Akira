@@ -52,7 +52,7 @@ module.exports = {
 <a:emoji_40:862473590213705768> | **Game Commands**
 \`kiss\` - \`slap\` - \`hug\`
 \`feed\` - \`cuddle\` - \`pat\`
-\`poke\` - \`cartoon\` - \`anime\`
+\`poke\`
 
 **Economy Commands**
 \`Comming Soon\`
