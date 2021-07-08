@@ -46,10 +46,13 @@ module.exports = {
 \`neon\`
 
 **Text Commands**
-\`Comming Soon\`
+\`textkurdish\` - \`textenglish\` - \`textarabic\`
+\`textturkish\` - \`textpersian\`
 
 <a:emoji_40:862473590213705768> | **Game Commands**
 \`kiss\` - \`slap\` - \`hug\`
+\`feed\` - \`cuddle\` - \`pat\`
+\`poke\` - \`cartoon\` - \`anime\`
 
 **Economy Commands**
 \`Comming Soon\`
