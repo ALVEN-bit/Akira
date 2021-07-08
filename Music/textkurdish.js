@@ -1,4 +1,4 @@
-const Discord = require("../util/MilratoUtil");
+const Discord = require("discord.js");
 const { MessageEmbed } = require("discord.js");
 const { Prefix } = require("../config.json");
 
