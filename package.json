@@ -14,6 +14,7 @@
     "discord.js": "^12.4.1",
     "ffmpeg-static": "^4.2.7",
     "figlet": "^1.5.0",
+    "nekos.life": "^2.0.7",
     "lyrics-finder": "^21.4.0",
     "node.js": "0.0.1-security",
     "quick.db": "^7.1.3",
