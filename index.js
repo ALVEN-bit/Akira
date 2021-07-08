@@ -211,7 +211,7 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/755169627872428134/854249208872435732/4.gif",
     ];
 
-    message.channel
+        message.channel
       .send({
         embed: {
           description: `${message.author.username} CARTOON GIFS `,
@@ -223,10 +223,11 @@ client.on("message", message => {
       .catch(e => {
         client.log.error(e);
       });
-
-      }
+  }
+});
 
 client.on('message',message => { 
+
 
  
 
