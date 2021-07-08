@@ -1,5 +1,5 @@
 const Discord = require("../util/MilratoUtil");
-const { MessageEmbed } = require("../util/MilratoUtil");
+const { MessageEmbed } = require("discord.js");
 const { Prefix } = require("../util/MilratoUtil");
 
 module.exports = {
