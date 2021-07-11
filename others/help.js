@@ -26,7 +26,7 @@ module.exports = {
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
 \`tinvites\` - \`sug\` - \`roleuser\`
-\`report\` - \`se\`
+\`report\` - \`se\` - \`avatar\`
  
 <a:emoji_39:862473578799955969> | **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
