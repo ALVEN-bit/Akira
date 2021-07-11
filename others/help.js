@@ -46,7 +46,7 @@ module.exports = {
 \`sad\` - \`cartoon\` - \`anime\`
 \`neon\`
 
-**Text Commands**
+<a:image0:770892089516490762> | **Text Commands**
 \`textkurdish\` - \`textenglish\`
 \`textarabic\` - \`textturkish\`
 \`textpersian\`
@@ -58,7 +58,7 @@ module.exports = {
 
 
 <a:emoji_24:856306109940629544> | **Links**
-[**Support**](https://discord.gg/wTESwYkdwY) | [**Invite**](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
+[__**Support**__](https://discord.gg/wTESwYkdwY) | [__**Invite**__](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM");
