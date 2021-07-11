@@ -687,7 +687,7 @@ client.on('message', msg => {
       let alpha = msg.mentions.members.first()
       if (!alpha) return msg.channel.send()
       let alphaEmbed = new Discord.MessageEmbed()
-      .setTitle('bawan is here')
+      .setTitle('ALVEN is here')
       .setDescription(args.join(" "))
  
       client.users.cache.get(`${alpha.id}`).send(alphaEmbed)
@@ -698,7 +698,7 @@ client.on('message', msg => {
 
   
   client.on("message", message => {
-  if (message.content === PREFIX + "open") {
+  if (message.content === PREFIX + "unlock") {
     if (!message.channel.guild) return;
     if (!message.member.hasPermission("MANAGE_CHANNELS"))
       return message.reply("You dont have Perms `MANAGE CHANNELS`:x:");
@@ -719,7 +719,7 @@ client.on('message', msg => {
 });
 
 client.on("message", message => {
-  if (message.content === PREFIX + "close") {
+  if (message.content === PREFIX + "lock") {
     if (!message.channel.guild) return;
     if (!message.member.hasPermission("MANAGE_CHANNELS"))
       return message.reply("You Dont Have Perms `MANAGE CHANNELS` :x:");
@@ -829,7 +829,7 @@ client.on(`message`, async (message) => {
 <@!680407776593182735>
 <@!716796150656794645>
 
-**Pop Bot**
+**Akira Bot**
 \`Music\`
  
 **Servers **
@@ -872,7 +872,7 @@ client.on(`message`, async (message) => {
 [{Invite}](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
-    .setTitle(`**{Support Pop Music }**`) 
+    .setTitle(`**{Support Akira Bot }**`) 
     .setThumbnail(``)
     .setTimestamp()
     
@@ -939,4 +939,4 @@ function delay(delayInms) {
  });
 }
 
-//Bot coded by Aquaman#5186 
+//Bot coded by ALVEN
