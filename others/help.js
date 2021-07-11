@@ -19,8 +19,7 @@ module.exports = {
     .setImage(`https://media.discordapp.net/attachments/854347466429038603/856560310646603836/ezgif.com-video-to-gif_14.gif`)
     .setTitle(`**Pop Music Help**`)
     .setDescription(`
-*** Prefix bot ***
-***__,__***
+
 
 <a:emoji_17:855062869934080030> | **User Commands**
 \`invite\` - \`support\` - \`about\`
