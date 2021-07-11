@@ -1,6 +1,5 @@
 const fs = require("fs");
 const Discord = require("discord.js"), 
-      fetch = require("node-fetch"),
       backup = require("discord-backup"),
       Sentry = require("@sentry/node");
 
