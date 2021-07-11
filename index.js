@@ -815,7 +815,7 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
-    .setAuthor("About Pop Music.", "")
+    .setAuthor("About Akira Bot", "")
     .setThumbnail(``)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
