@@ -45,7 +45,7 @@ module.exports = {
 \`sad\` - \`cartoon\` - \`anime\`
 \`neon\`
 
-<a:image0:770892089516490762> | **Text Commands**
+<a:emoji_41:863748588915523604> | **Text Commands**
 \`textkurdish\` - \`textenglish\`
 \`textarabic\` - \`textturkish\`
 \`textpersian\`
