@@ -43,8 +43,8 @@ module.exports = {
 <a:emoji_19:855064009639329812> | **Moderation Commands**
 \`ban\` - \`unban\` - \`setnick\`
 \`roleadd\` - \`roleremove\` - \`vkick\`
-\`setprefix\` - \`clear\` - \`close\`
-\`open\` - \`senddm\`
+\`setprefix\` - \`clear\` - \`lock\`
+\`unlock\` - \`senddm\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
