@@ -1,4 +1,6 @@
 const Discord = require("discord.js");
+const { MessageEmbed } = require("discord.js");
+const { Prefix } = require("../../config.js");
 
 module.exports = {
   name: "picgirl",
@@ -20,6 +22,7 @@ module.exports = {
     .setImage(replies[result]);
 
     message.channel.send(photoembed);
-            });
-           });
-     }
+
+   
+  }
+};
