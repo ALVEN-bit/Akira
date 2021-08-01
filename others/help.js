@@ -55,7 +55,7 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-<a:emoji_33:856616986422935583> | **Text Commands**
+<a:emoji_40:862473590213705768> | **Text Commands**
 \`textkurdish\` - \`textenglish\`
 \`textarabic\` - \`textturkish\`
 \`textpersian\`
