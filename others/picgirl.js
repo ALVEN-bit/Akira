@@ -20,7 +20,7 @@ module.exports = {
     .setImage(replies[result]);
 
     message.channel.send(photoembed);
-
-   
-  }
-};
+            });
+           });
+       }
+ }
