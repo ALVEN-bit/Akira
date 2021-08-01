@@ -14,8 +14,8 @@ let replies = ["نـەمـزانـۍ ڕۆژێـــڪٮ دێـــت..لـــە
 
 
  message.channel.send(replies[result]).then(message => {
- 			message.react('<a:emoji_91:842129244343369808>').then(r => {
- 				message.react('<a:emoji_94:842141553262460968>');
+ 			message.react('🥺').then(r => {
+ 				message.react('🖤');
             });
            });
        }
