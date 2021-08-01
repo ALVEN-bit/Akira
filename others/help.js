@@ -26,7 +26,7 @@ module.exports = {
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
 \`tinvites\` - \`sug\` - \`roleuser\`
-\`report\` - \`se\` - \`avatar\` - \sifo\`
+\`report\` - \`se\` - \`avatar\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
@@ -73,7 +73,7 @@ module.exports = {
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM");
-   message.react("<:emoji_4:822203026776391711>")
+   message.react("")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
