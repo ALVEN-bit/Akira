@@ -55,6 +55,10 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
+Comming soon | <a:emoji_37:861585696891076618> | Pictures Command
+
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+
 <a:emoji_40:862473590213705768> | **Text Commands**
 \`textkurdish\` - \`textenglish\`
 \`textarabic\` - \`textturkish\`
