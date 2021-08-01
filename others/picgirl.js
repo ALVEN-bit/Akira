@@ -22,5 +22,4 @@ module.exports = {
     message.channel.send(photoembed);
             });
            });
-       }
- }
+     }
