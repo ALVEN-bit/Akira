@@ -13,8 +13,8 @@ let replies = ["Never bend your head. Always hold it high. Look the world straig
 
 
  message.channel.send(replies[result]).then(message => {
- 			message.react('<a:emoji_91:842129244343369808>').then(r => {
- 				message.react('<a:emoji_94:842141553262460968>');
+ 			message.react('<a:alven:871381046007050253>').then(r => {
+ 				message.react('<a:alven:871381176928059412>');
             });
            });
        }
