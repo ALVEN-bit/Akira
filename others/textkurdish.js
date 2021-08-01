@@ -14,8 +14,8 @@ let replies = ["نـەمـزانـۍ ڕۆژێـــڪٮ دێـــت..لـــە
 
 
  message.channel.send(replies[result]).then(message => {
- 			message.react('🥺').then(r => {
- 				message.react('🖤');
+ 			message.react('<a:alven:871381046007050253>').then(r => {
+ 				message.react('<a:alven:871381176928059412>');
             });
            });
        }
