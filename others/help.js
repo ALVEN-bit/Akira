@@ -22,7 +22,6 @@ module.exports = {
 
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-
 <a:emoji_17:855062869934080030> | **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
@@ -55,14 +54,14 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-<a:emoji_41:863748588915523604> | **Text Commands**
+<a:emoji_33:856616986422935583> | **Text Commands**
 \`textkurdish\` - \`textenglish\`
 \`textarabic\` - \`textturkish\`
 \`textpersian\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-<a:emoji_40:862473590213705768> | **Game Commands**
+<a:emoji_41:863748588915523604> | **Game Commands**
 \`kiss\` - \`slap\` - \`hug\`
 \`feed\` - \`cuddle\` - \`pat\`
 \`poke\`
