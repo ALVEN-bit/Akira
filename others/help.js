@@ -22,6 +22,7 @@ module.exports = {
 
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+
 <a:emoji_17:855062869934080030> | **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
@@ -73,7 +74,7 @@ module.exports = {
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM");
-   message.react("")
+   message.react("<a:emoji_84:836364501308669974>")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
