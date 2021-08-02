@@ -44,7 +44,7 @@ module.exports = {
 \`ban\` - \`unban\` - \`setnick\`
 \`roleadd\` - \`roleremove\` - \`vkick\`
 \`setprefix\` - \`clear\` - \`lock\`
-\`unlock\` - \`senddm\`
+\`unlock\` - \`senddm\` - \`embed\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
