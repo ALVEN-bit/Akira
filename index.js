@@ -316,7 +316,7 @@ client.on("guildDelete", guild => {
   channel.send(embed);
 });
 
-const channelid = "840964401732911164"    //id channele vc
+const channelid = ""    //id channele vc
 client.on("ready", () => {
     const channel = client.channels.cache.get(channelid);
     if (!channel) return console.error("The channel does not exist!");
