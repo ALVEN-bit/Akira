@@ -882,29 +882,57 @@ client.on("message",message => {
   }
 });
 
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "delete")) {
+    if (!message.member.hasPermission("MANAGE_CHANNELS"))
+      return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
+    let args = message.content.split(" ").slice(1);
+    let channel = message.mentions.channels.first();
+    if (!channel)
+      return message
+        .reply("**There is not Found room Please mention channel**")
+        .catch(console.error);
+    channel.delete();
+  message.author.send("**Done check✅**")
+  }
+});
+ 
 
 client.on("message", message => {
   if (message.author.bot) return;
   if (!message.member.hasPermission("BAN_MEMBERS")) return;
-  if (message.content.startsWith(PREFIX + "ban")) {
-    let args = message.content.split(" ")
-    if(!args) return message.reply('**Please Mention**')
-   let reason = message.content.split(" ").slice(2).join(" ")
-   if(!reason) return message.reply("**Write Reason For Ban Member**")
-  let user = message.mentions.users.first() || message.guild.members.cache.get(args[1])
-   if(!user) return message.reply("**I cant Find Member**")
-   const emb = new Discord.MessageEmbed()
-    .setThumbnail(message.guild.iconURL())
-    .setTitle("Done Chek Has Been Baned✅")
-    .setDescription(":white_check_mark:  banned from the server! :airplane:")
-    .addField("**Member Baned**", user)
-    .addField("**Moderation**", message.author.username)
-    .setFooter(`Requested | ${message.author.tag}`, message.author.avatarURL())
-    .setTimestamp()
-     message.channel.send(emb)
-     message.guild.member(user).ban({reason: reason})
- 
-}
+  if (message.content === "b!ban") {
+    let args = message.content
+      .split(" ")
+      .slice(1)
+      .join(" ");
+    let user =
+      message.mentions.users.first() ||
+      message.guild.members.cache.get(args[1]);
+    if (!args) return message.reply("**Please Mention**");
+    let reason = message.content
+      .split(" ")
+      .slice(2)
+      .join(" ");
+    if (!reason) return message.reply("**Write Reason For Ban Member**");
+    if (!user) return message.reply("**I cant Find Member**");
+    if (!user.bannable)
+      return message.channel.send("**I cant Ban This Member**");
+    const emb = new Discord.MessageEmbed()
+      .setThumbnail(message.guild.iconURL())
+      .setTitle("Done Chek Has Been Banned✅")
+      .setDescription(":white_check_mark:  banned from the server! :airplane:")
+      .addField("**Member Banned**", user)
+      .addField("**Moderation**", message.author.username)
+      .addField("**Reason", reason)
+      .setFooter(
+        `Requested | ${message.author.tag}`,
+        message.author.avatarURL()
+      )
+      .setTimestamp();
+    message.channel.send(emb);
+    message.guild.member(user).ban({ reason: reason });
+  }
 });
 
 //
