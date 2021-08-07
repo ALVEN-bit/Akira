@@ -935,4 +935,11 @@ client.on("message", message => {
   }
 });
 
+
+
+client.on('ready', () => {
+var channel = client.channels.cache.get('840964396665929760');
+    if (channel) channel.join();
+});
+
 //
