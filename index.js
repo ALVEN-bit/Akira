@@ -566,8 +566,8 @@ message.reply("**Set Prefix Working ✅**")
 }
 });
 
- client.on('message',async message => {
-  if(message.content.startsWith(prefix + "sug")) {
+  client.on('message',async message => {
+  if(message.content.startsWith(PREFIX + "sug")) {
   let args = message.content.split(" ").slice(1)
  
     if(!args.length) {
@@ -596,10 +596,7 @@ message.reply("**Set Prefix Working ✅**")
  
  
  
-    message.channel.send("Sended Your Suggestion to  Suggestions Channel")
- 
-  }
-})
+  
  
  
  
