@@ -936,33 +936,6 @@ client.on("message", message => {
 });
 
 
-client.on("message", message => {
-  if (message.content === prefix + "lockall") {
-    if (!message.member.hasPermission("MANAGE_CHANNELS"))
-      return message.channel.send("**Please Check Your Permission**");
-    message.guild.channels.cache.forEach(c => {
-      c.createOverwrite(message.guild.id, {
-        SEND_MESSAGES: false
-      });
-    });
-    message.channel.send("**✅Done Locked Total Channels On Server!**");
-  }
-});
-
-client.on("message", message => {
-  if (message.content === prefix + "unlockall") {
-    if (!message.member.hasPermission("MANAGE_CHANNELS"))
-      return message.channel.send("**Please Check Your Permission**");
-    message.guild.channels.cache.forEach(c => {
-      c.createOverwrite(message.guild.id, {
-        SEND_MESSAGES: true
-      });
-    });
-    message.channel.send("**✅Done Unlocked Total Channels On Server**");
-  }
-});
-
-
 client.on('ready', () => {
 var channel = client.channels.cache.get('840964396665929760');
     if (channel) channel.join();
