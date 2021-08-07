@@ -938,5 +938,47 @@ function delay(delayInms) {
  });
 }
 
+client.on("message",message => {
+  if (message.content.startsWith(PREFIX + "chcreate")) {
+    var BlackJack = "Black Hat"
+    if(!message.member.hasPermission("MANAGE_CHANNELS")) return
+    let args = message.content.split(" ").slice(1)
+    var channel = args.join(" ")
+        message.guild.channels.create(channel, {type: "text",})
+    message.channel.send("Done Created Channel✅")
+
+  }
+  if (message.content.startsWith(PREFIX + "vcreate")) {
+    let args = message.content.split(" ").slice(1)
+        var channel = args.join(" ")
+    message.guild.channels.create(channel, {type: "voice",})
+  message.channel.send("Done Created Channel Voice✅")
+  }
+});
+
+
+client.on("message", message => {
+  if (message.author.bot) return;
+  if (!message.member.hasPermission("BAN_MEMBERS")) return;
+  if (message.content.startsWith(PREFIX + "ban")) {
+    let args = message.content.split(" ")
+    if(!args) return message.reply('**Please Mention**')
+   let reason = message.content.split(" ").slice(2).join(" ")
+   if(!reason) return message.reply("**Write Reason For Ban Member**")
+  let user = message.mentions.users.first() || message.guild.members.cache.get(args[1])
+   if(!user) return message.reply("**I cant Find Member**")
+   const emb = new Discord.MessageEmbed()
+    .setThumbnail(message.guild.iconURL())
+    .setTitle("Done Chek Has Been Baned✅")
+    .setDescription(":white_check_mark:  banned from the server! :airplane:")
+    .addField("**Member Baned**", user)
+    .addField("**Moderation**", message.author.username)
+    .setFooter(`Requested | ${message.author.tag}`, message.author.avatarURL())
+    .setTimestamp()
+     message.channel.send(emb)
+     message.guild.member(user).ban({reason: reason})
+ 
+}
+});
 
 //
