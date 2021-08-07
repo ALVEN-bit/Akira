@@ -957,7 +957,7 @@ function timeCon(time) {
     minutes = minutes > 9 ? minutes : '0' + minutes
     seconds = seconds > 9 ? seconds : '0' + seconds
     return ${days > 0 ? ${days}: : ''}${(hours || days) > 0 ? ${hours}: : ''}${minutes}:${seconds}
-}
+});
 
 
 client.on('ready', () => {
