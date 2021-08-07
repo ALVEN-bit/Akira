@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const { MessageEmbed } = require("discord.js"); //hama
 const { Color } = require("../../config.js");
 
 module.exports = {
