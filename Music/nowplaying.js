@@ -1,3 +1,6 @@
+////////////////////////////
+//////CONFIG LOAD///////////
+////////////////////////////
 const createBar = require("string-progressbar");
 const { Client, Collection, MessageEmbed } = require("discord.js");
 const { attentionembed } = require("../util/attentionembed");
@@ -16,7 +19,7 @@ execute(message) {
     //if not in a guild return
     if(!message.guild) return;
     //react with approve emoji
-    message.react("<a:emoji_83:836364481998618644>")
+    message.react("<:emoji_4:822203026776391711>")
     //get Server Queue
     const queue = message.client.queue.get(message.guild.id);
     //if nothing playing error
@@ -37,11 +40,11 @@ execute(message) {
     const left = ms - seek;
     //define embed
     let nowPlaying = new MessageEmbed()
-      .setTitle("<a:emoji_83:836364481998618644> Now playing")
-      .setDescription(`[**${song.title}**](${song.url})`)
-      .setThumbnail(song.thumbnail.url)
-      .setColor("#146DF6")
-      .setFooter("Time Remaining: " + new Date(left * 1000).toISOString().substr(11, 8));
+          .setTitle("**Now playing**")
+          .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+          .addField("⏱ Length:", `\`${song.duration} Minutes\``, true)
+          .setColor("RANDOM")
+          
       //if its a stream
       if(ms >= 10000) {
         nowPlaying.addField("\u200b", "🔴 LIVE", false);
@@ -50,7 +53,7 @@ execute(message) {
       }
       //If its not a stream
       if (ms > 0 && ms<10000) {
-        nowPlaying.addField("\u200b", "**[" + createBar((ms == 0 ? seek : ms), seek, 25, "▬", "🔘")[0] + "]**\n**" + new Date(seek * 1000).toISOString().substr(11, 8) + " / " + (ms == 0 ? " ◉ LIVE" : new Date(ms * 1000).toISOString().substr(11, 8))+ "**" , false );
+       
         //send approve msg
         return message.channel.send(nowPlaying);
       }
