@@ -883,7 +883,7 @@ client.on("message",message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "delete")) {
+  if (message.content.startsWith(PREFIX + "chdelete")) {
     if (!message.member.hasPermission("MANAGE_CHANNELS"))
       return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
     let args = message.content.split(" ").slice(1);
@@ -901,7 +901,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.author.bot) return;
   if (!message.member.hasPermission("BAN_MEMBERS")) return;
-  if (message.content === "b!ban") {
+  if (message.content === ",ban") {
     let args = message.content
       .split(" ")
       .slice(1)
