@@ -938,22 +938,5 @@ function delay(delayInms) {
  });
 }
 
-client.on("message",message => {
-  if (message.content.startsWith(prefix + "chcreate")) {
-    var BlackJack = "Black Hat"
-    if(!message.member.hasPermission("MANAGE_CHANNELS")) return
-    let args = message.content.split(" ").slice(1)
-    var channel = args.join(" ")
-        message.guild.channels.create(channel, {type: "text",})
-    message.channel.send("Done Created Channel✅")
-
-  }
-  if (message.content.startsWith(prefix + "vcreate")) {
-    let args = message.content.split(" ").slice(1)
-        var channel = args.join(" ")
-    message.guild.channels.create(channel, {type: "voice",})
-  message.channel.send("Done Created Channel Voice✅")
-  }
-});
 
 //
