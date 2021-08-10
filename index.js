@@ -48,14 +48,13 @@ client.on("message", message => {
         "https://media.discordapp.net/attachments/843655098559102987/852749068601524254/image0.gif",
         "https://media.discordapp.net/attachments/843655098559102987/851835779343712266/image0.gif",
         "https://media.discordapp.net/attachments/843655098559102987/851604134826475550/image0.gif",
-        "https://media.discordapp.net/attachments/843655098559102987/849929285833326622/SPOILER_Varon_168.gif",
-        "https://media.discordapp.net/attachments/843655098559102987/846715929789857813/image0-1.gif"
+        "https://media.discordapp.net/attachments/843655098559102987/846715929789857813/image0-1.gif",
       ];
 
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} BOY GIFS photos  `,
+          description: `${message.author.username} Smoking GIFS`,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
           }
