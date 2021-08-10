@@ -174,13 +174,6 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/608711480346542102/874285512519733258/BaranGif.9.gif",
       "https://media.discordapp.net/attachments/608711480346542102/874285466759864340/hit_gif_4.gif",
       "https://media.discordapp.net/attachments/608711480346542102/874285428457484358/gzm.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874285225193140234/leria_Couple_6.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874209273050177547/reaxen_5.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874192956305846313/Couple_PP_Gif_55.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874192955886436422/Couple_PP_Gif_57.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874192692274401290/Couple_PP_Gif_99.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874192692760961104/Couple_PP_Gif_86.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874192506747777024/Couple_PP_Gif_31.gif",
     ];
 
     message.channel
