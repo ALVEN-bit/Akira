@@ -180,7 +180,8 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/608711480346542102/874192955886436422/Couple_PP_Gif_57.gif",
       "https://media.discordapp.net/attachments/608711480346542102/874192692274401290/Couple_PP_Gif_99.gif",
       "https://media.discordapp.net/attachments/608711480346542102/874192692760961104/Couple_PP_Gif_86.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874192506747777024/Couple_PP_Gif_31.gif",     ];
+      "https://media.discordapp.net/attachments/608711480346542102/874192506747777024/Couple_PP_Gif_31.gif",
+     ];
 
     message.channel
       .send({
