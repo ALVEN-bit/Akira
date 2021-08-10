@@ -153,12 +153,6 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/788119246517174362/804759240451424256/Lrows_Gif_25.gif",
       "https://media.discordapp.net/attachments/788119246517174362/804759252899594259/ciftler8.gif"
       "https://media.discordapp.net/attachments/608711480346542102/874669236134490112/m2.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874594484598505543/image0.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874594478571257866/image0.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874594367061520384/image0.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874594325290442752/image0.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874594249818112060/image0.gif",
-      "https://media.discordapp.net/attachments/608711480346542102/874594249797152778/image0.gif",
     ];
 
     message.channel
