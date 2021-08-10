@@ -51,20 +51,20 @@ client.on("message", message => {
         "https://media.discordapp.net/attachments/843655098559102987/849929285833326622/SPOILER_Varon_168.gif",
         "https://media.discordapp.net/attachments/843655098559102987/846715929789857813/image0-1.gif"
       ];
-  
-      message.channel
-        .send({
-          embed: {
-            description: `${message.author.username} Smoking GIF `,
-            image: {
-              url: man[Math.floor(Math.random() * man.length)]
-            }
+
+    message.channel
+      .send({
+        embed: {
+          description: `${message.author.username} BOY GIFS photos  `,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
           }
-        })
-        .catch(e => {
-          client.log.error(e);
-        });
-    }
+        }
+      })
+      .catch(e => {
+        client.log.error(e);
+      });
+  }
 });
 
 
