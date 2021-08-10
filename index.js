@@ -50,7 +50,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} Smoking GIFS`,
+          description: `${message.author.username} **Smoking GIF**`,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
           }
@@ -87,7 +87,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} BOY GIFS photos  `,
+          description: `${message.author.username} **BOY GIF**`,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
           }
@@ -120,7 +120,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} GIRL GIFS `,
+          description: `${message.author.username} **GIRL GIF**`,
           image: {
             url: girl[Math.floor(Math.random() * girl.length)]
           }
@@ -157,7 +157,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} ❤️  Couple Gif  `,
+          description: `${message.author.username} **❤️  Couple Gif**`,
           image: {
             url: loves[Math.floor(Math.random() * loves.length)]
           }
@@ -225,7 +225,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} ANIME GIFS photos  `,
+          description: `${message.author.username} **ANIME GIF**  `,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
           }
@@ -262,7 +262,7 @@ client.on("message", message => {
         message.channel
       .send({
         embed: {
-          description: `${message.author.username} CARTOON GIFS `,
+          description: `${message.author.username} **CARTOON GIFS**`,
           image: {
             url: girl[Math.floor(Math.random() * girl.length)]
           }
