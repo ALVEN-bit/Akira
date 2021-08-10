@@ -17,10 +17,9 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 //this fires when the BOT STARTS DO NOT TOUCH
 
 client.on("message", message => {
-    if (message.content.startsWith(prefix + "smoking")) {
-      let man = [
+  if (message.content.startsWith(PREFIX + "smoking")) {
+    let man = [
         "https://media.discordapp.net/attachments/843655098559102987/872858478744600576/image3.gif",
-        "https://media.discordapp.net/attachments/843655098559102987/872847098180149328/46cc16338ca30c4f7f6ea64c35d645ea.gif",
         "https://media.discordapp.net/attachments/843655098559102987/871477603482091550/image2.gif",
         "https://media.discordapp.net/attachments/843655098559102987/871477406999908362/image0.gif",
         "https://media.discordapp.net/attachments/843655098559102987/870954847019614208/image0.gif",
@@ -28,15 +27,12 @@ client.on("message", message => {
         "https://media.discordapp.net/attachments/843655098559102987/863418172001746964/image1.gif",
         "https://media.discordapp.net/attachments/843655098559102987/862366248038039552/image0.gif",
         "https://media.discordapp.net/attachments/843655098559102987/858672155414757376/image0.gif",
-        "https://media.discordapp.net/attachments/843655098559102987/857360290291122176/chermie-32.gif",
         "https://media.discordapp.net/attachments/843655098559102987/857215168010649600/image1.gif",
         "https://media.discordapp.net/attachments/843655098559102987/857205996937019412/image0.gif",
         "https://media.discordapp.net/attachments/843655098559102987/857205981477339146/image0.gif",
         "https://media.discordapp.net/attachments/843655098559102987/857205961936732170/image0.gif",
         "https://media.discordapp.net/attachments/843655098559102987/856932164552359966/image6.gif",
-        "https://media.discordapp.net/attachments/843655098559102987/855904664029233203/20200518_034734.gif",
         "https://media.discordapp.net/attachments/843655098559102987/855802519887937576/image0.gif",
-        "https://media.discordapp.net/attachments/843655098559102987/855068339138068490/image0-15.gif",
         "https://media.discordapp.net/attachments/843655098559102987/854455178325262356/image1.gif",
         "https://media.discordapp.net/attachments/843655098559102987/854374960696131624/image9.gif",
         "https://media.discordapp.net/attachments/843655098559102987/854374959861858314/image7.gif",
