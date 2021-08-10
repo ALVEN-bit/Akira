@@ -152,7 +152,35 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/788119246517174362/804337804179275776/16-10-27-tenor.gif",
       "https://media.discordapp.net/attachments/788119246517174362/804759240451424256/Lrows_Gif_25.gif",
       "https://media.discordapp.net/attachments/788119246517174362/804759252899594259/ciftler8.gif"
-    ];
+      "https://media.discordapp.net/attachments/608711480346542102/874669236134490112/m2.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874594484598505543/image0.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874594478571257866/image0.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874594367061520384/image0.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874594325290442752/image0.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874594249818112060/image0.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874594249797152778/image0.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874583518217392128/ezgif-2-22f6a4b5ed9e.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874582027922460712/06871cce20649ae0096ec6ca579f080e.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874527969224306708/Ivy-9.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874528150611197972/a_d8e18e0727c8289f1a879574dc4f9273.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874528209465671680/a20.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874393950188884058/GIF-210809_183928.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874383921201152000/image0.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874383892755394560/image0.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874382984759894016/a_877a19e8ffe6ec2849549465a56e1774.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874371263634755614/a_e9db557967f524f1d5c33029cb77269a.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874312584147390514/a_147af04c871407cb598ef71f4c404cbc.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874289542994202706/image3-2.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874285512519733258/BaranGif.9.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874285466759864340/hit_gif_4.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874285428457484358/gzm.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874285225193140234/leria_Couple_6.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874209273050177547/reaxen_5.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874192956305846313/Couple_PP_Gif_55.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874192955886436422/Couple_PP_Gif_57.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874192692274401290/Couple_PP_Gif_99.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874192692760961104/Couple_PP_Gif_86.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/874192506747777024/Couple_PP_Gif_31.gif",     ];
 
     message.channel
       .send({
