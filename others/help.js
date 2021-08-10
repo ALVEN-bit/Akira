@@ -52,7 +52,7 @@ module.exports = {
 <a:emoji_33:856616986422935583> | **Gif Commands**
 \`boy\` - \`girl\` - \`couple\`
 \`sad\` - \`cartoon\` - \`anime\`
-\`neon\`
+\`neon\` - \`smoking\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
