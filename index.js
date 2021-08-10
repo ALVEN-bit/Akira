@@ -181,13 +181,12 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/608711480346542102/874192692274401290/Couple_PP_Gif_99.gif",
       "https://media.discordapp.net/attachments/608711480346542102/874192692760961104/Couple_PP_Gif_86.gif",
       "https://media.discordapp.net/attachments/608711480346542102/874192506747777024/Couple_PP_Gif_31.gif",
-
     ];
 
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} **SAD GIFS**`,
+          description: `${message.author.username} **❤️ Couple GIFS**`,
           image: {
             url: sads[Math.floor(Math.random() * sads.length)]
           }
