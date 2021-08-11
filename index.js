@@ -151,7 +151,7 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/788119246517174362/804188805204410378/2.gif",
       "https://media.discordapp.net/attachments/788119246517174362/804337804179275776/16-10-27-tenor.gif",
       "https://media.discordapp.net/attachments/788119246517174362/804759240451424256/Lrows_Gif_25.gif",
-      "https://media.discordapp.net/attachments/788119246517174362/804759252899594259/ciftler8.gif"
+      "https://media.discordapp.net/attachments/788119246517174362/804759252899594259/ciftler8.gif",
       "https://media.discordapp.net/attachments/608711480346542102/874669236134490112/m2.gif",
     ];
 
