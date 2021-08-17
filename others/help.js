@@ -54,9 +54,6 @@ module.exports = {
 \`sad\` - \`cartoon\` - \`anime\`
 \`neon\` - \`smoking\`
 
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-
-Comming soon | <a:emoji_37:861585696891076618> | Pictures Command
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
