@@ -275,7 +275,7 @@ client.on("message", message => {
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("840964401732911164");
+  let channel = client.channels.cache.get("877604742560370738");
   let embed = new MessageEmbed().setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✔️ Join Server`)
@@ -289,7 +289,7 @@ client.on("guildCreate", guild => {
 
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("840964401732911164");
+  let channel = client.channels.cache.get("877604742560370738");
   let embed = new MessageEmbed()
   .setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
@@ -990,7 +990,7 @@ client.on("message", message => {
 
 
 client.on('ready', () => {
-var channel = client.channels.cache.get('840964396665929760');
+var channel = client.channels.cache.get('877596742567215124');
     if (channel) channel.join();
 });
 
