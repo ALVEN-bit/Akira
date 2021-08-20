@@ -52,14 +52,14 @@ module.exports = {
 <a:emoji_33:856616986422935583> | **Gif Commands**
 \`boy\` - \`girl\` - \`couple\`
 \`sad\` - \`cartoon\` - \`anime\`
-\`neon\` - \`smoking\` -\`baby\`
-
+\`neon\` - \`smoking\` - \`baby\`
+\`animal\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
 <a:emoji_37:861585747219841074> | **Picture Command **
 \`pboy\` - \`pgirl\` - \`pcouple\`
-\`pemoji\`
+\`pemoji\` - \`panime\`
 
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
