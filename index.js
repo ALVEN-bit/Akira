@@ -17,6 +17,51 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 //this fires when the BOT STARTS DO NOT TOUCH
 
 client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "animal")) {
+    let man = [
+  "https://cdn.discordapp.com/attachments/733640065200160768/737280791993779206/tenor_3.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737280895995740210/tenor_7.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737280900022140938/tenor_2.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737280920800722984/tenor_9.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737280921689915411/tenor_10.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737280924563275776/tenor.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737280929311096842/tenor_5.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737280944016457748/tenor_1.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737280945195057193/tenor_6.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737281583412805712/tenor_8.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737281572826382336/tenor_4.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282276320084118/tenor_2.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282249422143488/tenor_3.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282243113910292/tenor_4.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282207579635722/tenor.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282195185467473/tenor_5.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282604176506910/tenor.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282625747681410/tenor_1.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282660250157122/tenor_4.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282929633525851/tenor_11.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282757188911174/tenor_7.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282947119579216/tenor_9.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282750385487932/tenor_5.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282940760883210/tenor_10.gif",
+  "https://cdn.discordapp.com/attachments/733640065200160768/737282991348252683/tenor_13.gif"
+];
+
+    message.channel
+      .send({
+        embed: {
+          description: `${message.author.username} **Gif Animal **`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+      .catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
+client.on("message", message => {
   if (message.content.startsWith(PREFIX + "panime")) {
     let man = [
   "https://cdn.discordapp.com/attachments/737803691565907991/814870994530861116/360cf7ac7e7b9f1441d0948e6ab83f07.jpg",
