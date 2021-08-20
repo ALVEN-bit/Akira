@@ -57,6 +57,13 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
+<a:emoji_37:861585747219841074> | **Picture Command **
+\`pboy\` - \`pgirl\` - \`pcouple
+
+
+
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+
 <a:emoji_40:862473590213705768> | **Text Commands**
 \`textkurdish\` - \`textenglish\`
 \`textarabic\` - \`textturkish\`
