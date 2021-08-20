@@ -58,7 +58,7 @@ module.exports = {
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
 <a:emoji_37:861585747219841074> | **Picture Command **
-\`pboy\` - \`pgirl\` - \`pcouple
+\`pboy\` - \`pgirl\` - \`pcouple`
 \`pemoji\`
 
 
