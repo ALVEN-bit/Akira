@@ -390,7 +390,7 @@ client.on("message", message => {
         "https://cdn.discordapp.com/attachments/755893014915711047/827044744408072223/image0-123.gif",
         "https://cdn.discordapp.com/attachments/755893014915711047/826498012410019930/a_88e5b4c03a185d0d03f84039036da416.gif",
         "https://cdn.discordapp.com/attachments/755893014915711047/826498127895986186/KAPTANman_48.gif",
-        "https://cdn.discordapp.com/attachments/755893014915711047/826497192579170344/a_9b2ed05b287fc58858272fa4294a293b-1.gif"
+        "https://cdn.discordapp.com/attachments/755893014915711047/826497192579170344/a_9b2ed05b287fc58858272fa4294a293b-1.gif",
      ];
 
     message.channel
