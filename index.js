@@ -17,6 +17,38 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 //this fires when the BOT STARTS DO NOT TOUCH
 
 client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "pgirl")) {
+    let man = [
+  "https://cdn.discordapp.com/attachments/737803070217650227/805674220192530462/1b2aa8e3e516bdd7.jpg",
+  "https://cdn.discordapp.com/attachments/737803070217650227/783976924565209118/630670529ef7a3c76a03f8e44ef70ddb.jpg",
+  "https://cdn.discordapp.com/attachments/737803070217650227/755383792209756240/image0.jpg",
+  "https://cdn.discordapp.com/attachments/737803070217650227/783653667952787496/008beb180d5975b98697d2c26dd55bbc.jpg",
+  "https://cdn.discordapp.com/attachments/737803070217650227/790954384397697065/image8.jpg",
+  "https://cdn.discordapp.com/attachments/737803070217650227/814869160811167774/a87704b2e441d9e8e95330332bf555d4.jpg",
+  "https://cdn.discordapp.com/attachments/737803070217650227/737835352533893130/image0.jpg",
+  "https://cdn.discordapp.com/attachments/737803070217650227/790954414621065226/image7.jpg",
+  "https://cdn.discordapp.com/attachments/737803070217650227/783002678770663464/947772bf05bd5c1b58a5e91fcf4ccf59.jpg",
+  "https://cdn.discordapp.com/attachments/737803070217650227/794200284632186890/c11.PNG",
+  "https://cdn.discordapp.com/attachments/737803070217650227/814869221879971850/7f8e7a4cf39beccd3923584c7fa3bad6.jpg"
+ ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `${message.author.username} ** Picture Girl **`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+      .catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
+
+client.on("message", message => {
   if (message.content.startsWith(PREFIX + "pemoji")) {
     let man = [
   "https://cdn.discordapp.com/attachments/697145837062455411/815574681695813671/wb9Wj5v4GuuAAAAABJRU5ErkJggg-1.png",
@@ -54,7 +86,6 @@ client.on("message", message => {
   "https://cdn.discordapp.com/attachments/697145837062455411/815693103226552340/e8.png",
   "https://cdn.discordapp.com/attachments/697145837062455411/815943754841981009/image0.png",
   "https://cdn.discordapp.com/attachments/772470455457808414/782274541920583720/image0.png"
-
     ];
 
     message.channel
