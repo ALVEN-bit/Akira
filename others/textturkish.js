@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports = {
-  name: `textturkish`,
+  name: `textturk`,
   description: "🎸",
   aliases: ["tt"],
   cooldown: 3,
