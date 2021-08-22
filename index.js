@@ -1169,7 +1169,7 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setAuthor("About Akira Bot", "")
     .setThumbnail(``)
     .setFooter(message.author.username, message.author.displayAvatarURL)
@@ -1180,30 +1180,30 @@ client.on(`message`, async (message) => {
 
 [{Invite}](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 
-**My Devloper :**
-<@!680407776593182735>
-<@!716796150656794645>
+> __**My Devloper :**__
+> <@!680407776593182735>
+> <@!716796150656794645>
 
-**Akira Bot**
-\`Music\`
- 
-**Servers **
-\`${client.guilds.cache.size}\`
+> **Akira Bot**
+> __**Prefix**__ { **,** }
 
-**Channels ** 
-\`${client.channels.cache.size}\` 
+> **Servers **
+> \`${client.guilds.cache.size}\`
 
-**My Name **
-\`${client.user.tag}\`
+> **Channels ** 
+>\`${client.channels.cache.size}\` 
 
-**My ID **
-\`${client.user.id}\`
+> **My Name **
+> \`${client.user.tag}\`
 
-**My Ping **
-\`${client.ws.ping}\`
+> **My ID **
+> \`${client.user.id}\`
 
-**Version **
-\`V2\`
+> **My Ping **
+> \`${client.ws.ping}\`
+
+> **Version **
+> \`V2\`
 
 `)
 
