@@ -24,57 +24,57 @@ module.exports = {
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
 <a:emoji_17:855062869934080030> | **User Commands**
-\`invite\` - \`support\` - \`about\`
-\`ping\` - \`prefix\` - \`uptime\`
-\`tinvites\` - \`sug\` - \`roleuser\`
-\`report\` - \`se\` - \`avatar\` - \`sifo\`
+> \`invite\` . \`support\` . \`about\`
+> \`ping\` . \`prefix\` . \`uptime\`
+> \`tinvites\` . \`sug\` . \`roleuser\`
+> \`se\` . \`avatar\` . \`sifo\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
 <a:emoji_39:862473578799955969> | **Music Commands**
-\`play\` - \`skip\` - \`skipto\`
-\`stop\` - \`volume\` - \`nowplaying\`
-\`shuffle\` - \`search\` - \`resume\`
-\`remove\` - \`queue\` - \`loop\`
-\`lyrics\` - \`radio\`
+> \`play\` . \`skip\` . \`skipto\`
+> \`stop\` . \`volume\` . \`nowplaying\`
+> \`shuffle\` . \`search\` . \`resume\`
+> \`remove\` . \`queue\` . \`loop\`
+> \`lyrics\` . \`radio\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
 <a:emoji_19:855064009639329812> | **Moderation Commands**
-\`ban\` - \`unban\` - \`setnick\`
-\`roleadd\` - \`roleremove\` - \`vkick\`
-\`setprefix\` - \`clear\` - \`lock\`
-\`unlock\` - \`senddm\` - \`embed\`
-\`chcreate\` - \`chdelete\`
+> \`ban\` . \`unban\` . \`setnick\`
+> \`roleadd\` . \`roleremove\` . \`vkick\`
+> \`setprefix\` . \`clear\` . \`lock\`
+> \`unlock\` . \`senddm\` . \`embed\`
+> \`chcreate\` . \`chdelete\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
 <a:emoji_33:856616986422935583> | **Gif Commands**
-\`boy\` - \`girl\` - \`couple\`
-\`sad\` - \`cartoon\` - \`anime\`
-\`neon\` - \`smoking\` - \`baby\`
-\`animal\`
+> \`boy\` . \`girl\` . \`couple\`
+> \`sad\` . \`cartoon\` . \`anime\`
+> \`neon\` . \`smoking\` . \`baby\`
+> \`animal\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
 <a:emoji_37:861585747219841074> | **Picture Command **
-\`pboy\` - \`pgirl\` - \`pcouple\`
-\`pemoji\` - \`panime\`
+> \`pboy\` . \`pgirl\` . \`pcouple\`
+> \`pemoji\` . \`panime\`
 
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
 <a:emoji_40:862473590213705768> | **Text Commands**
-\`textkurdish\` - \`textenglish\`
-\`textarabic\` - \`textturkish\`
-\`textpersian\`
+> \`textkurd\` . \`textengli\`
+> \`textarab\` . \`textturk\`
+> \`textpers\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
 <a:emoji_41:863748588915523604> | **Game Commands**
-\`kiss\` - \`slap\` - \`hug\`
-\`feed\` - \`cuddle\` - \`pat\`
-\`poke\`
+> \`kiss\` . \`slap\` . \`hug\`
+> \`feed\` . \`cuddle\` . \`pat\`
+> \`poke\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
