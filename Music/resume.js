@@ -19,7 +19,7 @@ execute(message) {
     //if not a guild return
     if(!message.guild) return;
     //react with approve emoji
-    message.react("<:emoji_4:822203026776391711>").catch(console.error);
+    message.react("").catch(console.error);
     //get the Server Queue
     const queue = message.client.queue.get(message.guild.id);
     //if no queue return error
@@ -33,7 +33,7 @@ execute(message) {
       //resume the Bot
       queue.connection.dispatcher.resume();
       //Create approve embed
-      const playembed = new MessageEmbed().setColor("RANDOM")
+      const playembed = new MessageEmbed().setColor("BLACK")
       .setAuthor(`${message.author.username} resumed the music!`, "")
       //send the approve
       return queue.textChannel.send(playembed).catch(console.error);
