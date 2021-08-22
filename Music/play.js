@@ -57,24 +57,24 @@ const search = args.join(" ");
     try {
       if (serverQueue) {
         if (urlValid) {
-          message.channel.send(new MessageEmbed().setColor("RANDOM")
+          message.channel.send(new MessageEmbed().setColor("BLACK")
             .setDescription(`**🔎 Searching 🖇 [\`LINK\`](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("RANDOM")
+          message.channel.send(new MessageEmbed().setColor("BLACK")
             .setDescription(`**🔎 Searching \`${args.join(" ")}\`**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
-        message.channel.send(new MessageEmbed().setColor("RANDOM")
+        message.channel.send(new MessageEmbed().setColor("BLACK")
           .setDescription(`**✔️ Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
-          message.channel.send(new MessageEmbed().setColor("RANDOM")
+          message.channel.send(new MessageEmbed().setColor("BLACK")
             .setDescription(`**🔎 Searching 🖇 [\`LINK\`](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("RANDOM")
+          message.channel.send(new MessageEmbed().setColor("BLACK")
             .setDescription(`**🔎 Searching \`${args.join(" ")}\`**`))
         }
         queueConstruct.connection.voice.setSelfDeaf(true);
@@ -137,7 +137,7 @@ serverQueue.songs.push(song);
       const newsong = new MessageEmbed()
         .setTitle("🎶 "+song.title)
         .setURL(song.url)
-        .setColor("RANDOM")
+        .setColor("BLACK")
         .setImage(thumb)
         .setThumbnail(``)
          .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
