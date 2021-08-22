@@ -1191,7 +1191,7 @@ client.on(`message`, async (message) => {
 > \`${client.guilds.cache.size}\`
 
 > **Channels ** 
->\`${client.channels.cache.size}\` 
+> \`${client.channels.cache.size}\` 
 
 > **My Name **
 > \`${client.user.tag}\`
