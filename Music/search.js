@@ -41,12 +41,12 @@ async execute(message,args,client) {
     //define a temporary Loading Embed
     let temEmbed = new MessageEmbed()
     .setAuthor("Searching...", "")
-    .setColor("RANDOM")
+    .setColor("BLACK")
     //define the Result Embed
     let resultsEmbed = new MessageEmbed()
       .setTitle("Results for: ")
       .setDescription(`\`${search}\``)
-      .setColor("83c0ff")
+      .setColor("BLACK")
       .setFooter("Response with your favorite number", client.user.displayAvatarURL() )
     //try to find top 5 results
     try {
