@@ -82,7 +82,7 @@ module.exports = {
 [__**Support**__](https://discord.gg/wTESwYkdwY) | [__**Invite**__](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-   .setColor("RANDOM");
+   .setColor("BLACK");
    message.react("<a:emoji_84:836364501308669974>")
     return message.channel.send(helpEmbed).catch(console.error);
 
