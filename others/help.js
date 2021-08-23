@@ -16,7 +16,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(``)
-    .setImage(``)
+    .setImage(`https://media.discordapp.net/attachments/827288710265045053/879419178933694504/image0.gif`)
     .setTitle(`**Akira Help**`)
     .setDescription(`
 
