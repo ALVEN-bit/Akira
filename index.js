@@ -272,7 +272,7 @@ const rply = [
 
 
 client.on('message',async message => {
-  if(message.content.startsWith(PREFIX + "channelinfo")) { 
+  if(message.content.startsWith(PREFIX + "chinfo")) { 
   let args = message.content.split(" ").slice(1)
 let channel = message.mentions.channels.first() || client.guilds.cache.get(message.guild.id).channels.cache.get(args[0]) || message.guild.channels.cache.find(r => r.name.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.channel;
         if (!channel) return message.channel.send("**Channel Not Found!**");
@@ -293,7 +293,7 @@ let channel = message.mentions.channels.first() || client.guilds.cache.get(messa
 
 
 client.on('message', message => {
-if (message.content.startsWith(PREFIX + 'listEmoji')) {
+if (message.content.startsWith(PREFIX + 'listemoji')) {
   let Emojis = "";
     let EmojisAnimated = "";
     let EmojiCount = 0;
