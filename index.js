@@ -41,10 +41,7 @@ ${client.channels.cache.size}
 ${client.commands.size}
 `)
 
-    //send the Message
-    message.channel.send(embed)
-    message.react("<a:emoji_81:830444292111204382>")
-  } 
+  
 
 
 
