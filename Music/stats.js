@@ -21,11 +21,11 @@ module.exports = {
     .setDescription(`
  OWNER BOT <@!680407776593182735>
 
-[GITHUP](https://github.com/ALVEN-bit)
+[__**GITHUP**__](https://github.com/ALVEN-bit)
 
-[EDITOR ALVEN](https://discord.gg/am8FpWt3Yh)
+[__**EDITOR ALVEN**__](https://discord.gg/am8FpWt3Yh)
 
-[The Golden Force](https://discord.gg/tgf)
+[__**The Golden Force**__](https://discord.gg/tgf)
 
 [**Invite Bot**](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)`)
 
