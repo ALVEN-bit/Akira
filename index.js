@@ -20,6 +20,233 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
 
 
+client.on("message", message => {
+  if (message.channel.type === "dm") {
+    if (message.content.startsWith("https://discord.gg/")) {  
+message.author.send(`**تـۆش ریکلام بۆ ئـەم سێرڤـەرە بکە **  
+https://discord.gg/am8FpWt3Yh`); 
+ 
+ 
+ 
+ 
+      client.channels.cache.get("877596734648369152").send(
+ 
+        `>  send by <@${message.author.id}> 
+${message.content}`
+      );
+    }
+  }
+  })
+
+
+
+client.on("message", msg => {
+    var args = msg.content.split(" ");
+    var command = args[0];
+    var emojisname = args[1];
+    var emojislink = args[2];
+    if (command === PREFIX + "addemoji") {
+        if (!msg.guild){
+            return msg.channel.send("Only SERVER Commands");
+        }
+        if (!msg.guild.member(client.user).hasPermission("MANAGE_EMOJIS")){
+            return msg.channel.send("لا تتوفر لدى البوت صلاحية  `MANAGE_EMOJIS`");
+        }
+        if(!msg.guild.member(msg.author).hasPermission("MANAGE_EMOJIS")) {
+            return msg.channel.send("لا تتوفر لديك صلاحيات `MANAGE_EMOJIS`");
+        }
+        if(!emojisname){
+            return msg.channel.send("يرجى ادراج اسم الايموجي");
+        }
+        if (!emojislink){
+            return msg.channel.send("يرجى ادراج رابط الايموجي");
+        }
+        msg.guild.emojis.create(emojislink, emojisname).then(emoji =>{
+            msg.channel.send("Emoji Created . <:"+emoji.name+":"+emoji.id+">")
+        }).catch(err => msg.channel.send("يجب ان يكون حجم الصورة اقل من `256` كيلوبايت"));
+    }
+
+});
+
+
+
+client.on("message", async msg => {
+  if (msg.channel.type === "dm") return;
+  if (msg.author.bot) return;
+  if (msg.content.startsWith(PREFIX + "setstats")) {
+    if (!msg.guild.member(msg.author).hasPermission("MANAGE_CHANNELS"))
+      return msg.reply("❌ **go play minecraft**");
+    if (!msg.guild.member(client.user).hasPermission(["MANAGE_CHANNELS"]))
+      return msg.reply("❌ **البوت لا يمتلك صلاحية**");
+    var ggg = msg.guild.createChannel("SERVER STATS", "category").then(kk => {
+      var ccc = msg.guild.createChannel("SERVER STATS", "voice").then(al => {
+        var aa = msg.guild.createChannel("SERVER STATS", "voice").then(alp => {
+          var aaa = msg.guild
+            .createChannel("SERVER STATS", "voice")
+            .then(alph => {
+              al.setParent(kk);
+              alp.setParent(kk);
+              alph.setParent(kk);
+
+              al.overwritePermissions(msg.guild.id, {
+                CONNECT: false,
+                SPEAK: false
+              });
+              alp.overwritePermissions(msg.guild.id, {
+                CONNECT: false,
+                SPEAK: false
+              });
+              alph.overwritePermissions(msg.guild.id, {
+                CONNECT: false,
+                SPEAK: false
+              });
+              setInterval(() => {
+                var currentTime = new Date(),
+                  hours = currentTime.getHours() + 3,
+                  minutes = currentTime.getMinutes(),
+                  Seconds = currentTime.getSeconds(),
+                  Year = currentTime.getFullYear(),
+                  Month = currentTime.getMonth() + 1,
+                  Dat = currentTime.getDate();
+                if (minutes < 10) {
+                  minutes = "0" + minutes;
+                }
+                var suffix = "AM";
+                if (hours >= 12) {
+                  suffix = "PM";
+                  hours = hours - 12;
+                }
+                if (hours == 0) {
+                  hours = 12;
+                }
+                al.setName(
+                  `Voice Online :[ ${
+                    msg.guild.members.filter(m => m.voiceChannel).size
+                  } ]`
+                );
+                alp.setName(
+                  `Time :[${hours} : ${minutes} : ${Seconds} ${suffix}]`
+                );
+                alph.setName(`[ Date : [${Year} - ${Month} - ${Dat} ]`);
+              }, 1000);
+            });
+        });
+      });
+    });
+  }
+});
+
+
+
+
+client.on('message', message => {
+        if(message.content.startsWith(PREFIX + 'deafen')) {
+      if (message.mentions.users.size === 0 && message.mentions.roles.size === 0) {
+        return message.reply('**Menition member**❌').catch(console.error);
+      }
+      if (!message.guild.member(client.user).hasPermission('DEAFEN_MEMBERS')) {
+        return message.reply('I dont have premission**❌').catch(console.error);
+      }
+ 
+      const deafenMember = (member) => {
+        if (!member || !member.voiceChannel) return;
+        if (member.serverDeaf) return message.channel.send(`${member} **دیفێند کرا**:x:`);
+        member.setDeaf(true).catch(console.error);
+        if(!message.member.hasPermission("DEAFEN_MEMBERS")) return message.channel.sendMessage("**You dont have DEAFEN_MEMBER**❌ ").then(m => m.delete(5000));
+      };
+ 
+      message.mentions.users.forEach(user => deafenMember(message.guild.member(user)));
+      message.mentions.roles.forEach(role => role.members.forEach(member => deafenMember(member)));
+        }
+ 
+    });
+
+
+
+client.on('message', async message => {
+if(message.content.startsWith(PREFIX + 'mute')) {
+let mention = message.mentions.members.first();
+let role = message.guild.roles.cache.find(ro => ro.name == 'Muted');
+ 
+if (!message.guild.me.hasPermission('MANAGE_ROLES')) {
+        const embed = new Discord.MessageEmbed()
+.setThumbnail(client.user.avatarURL())
+.setColor("#9700ff")
+.setTitle("Error ❌")
+.setDescription("** I don't have permission`MANAGE_ROLES` **")
+.setFooter(client.user.username,client.user.avatarURL())
+message.channel.send(embed);
+};
+if (!message.member.hasPermission('MANAGE_GUILD')) {
+    const embed = new Discord.MessageEmbed()
+.setThumbnail(client.user.avatarURL())
+.setColor("#ff0000")
+.setTitle("Error ❌")
+.setDescription(`** you don't have permissionMANAGE_GUILD**`)
+.setFooter(client.user.username,client.user.avatarURL())
+message.channel.send(embed);
+};
+ 
+let muteRole = message.guild.roles.cache.find(ro => ro.name == 'Muted');
+if (!muteRole) {
+    return message.channel.send("** I don't found role `Muted`**")
+};
+ 
+if(!mention) return message.channel.send(`**Ex : ${PREFIX}mute @user**`);
+message.guild.channels.cache.forEach(c => {
+c.updateOverwrite(role , {
+SEND_MESSAGES: false, 
+ADD_REACTIONS: false
+});
+});//////All codes by robot.probot we are a robot
+mention.roles.add(role)
+const embed = new Discord.MessageEmbed()
+.setThumbnail(mention.user.avatarURL())
+.setColor("#9700ff")
+.setTitle("Done ✅")
+.setDescription(`**muted ${mention.user.username}**`)
+.setFooter(`by ${message.author.username}`)
+message.channel.send(embed)
+}
+});
+
+
+client.on('message', async message =>{
+      if(message.content.startsWith(PREFIX + 'undeafen')) {
+ 
+    if (message.mentions.users.size === 0 && message.mentions.roles.size === 0) {
+      return message.reply('**Please menition member**❌').catch(console.error);
+    }
+    if (!message.guild.member(client.user).hasPermission('DEAFEN_MEMBERS')) {
+      return message.reply('**I dont undeafen member**❌ ').catch(console.error);
+      if(!message.member.hasPermission("DEAFEN_MEMBERS")) return message.channel.sendMessage("**You dont have premission Deafen member**❌ ").then(m => m.delete(5000));
+    }
+ 
+    const undeafenMember = (member) => {
+      if (!member || !member.voiceChannel) return;
+      if (!member.serverDeaf) return message.channel.send(`${member} `);
+      member.setDeaf(false).catch(console.error);
+    };
+ 
+    message.mentions.users.forEach(user => undeafenMember(message.guild.member(user)));
+    message.mentions.roles.forEach(role => role.members.forEach(member => undeafenMember(member)));
+    }
+    });
+
+
+
+
+client.on("message", message => {
+  if(message.content.startsWith(PREFIX + "benner")) {
+    if(message.guild.bannerURL() === null || message.guild.bannerURL === undefined) return message.channel.send("**❌ | This server doesn\'t have a banner.**");
+    const ba = new Discord.MessageEmbed()
+    .setAuthor(message.guild.name, message.guild.iconURL())
+    .setDescription(`[Banner URL](${message.guild.bannerURL}?size=2048)`)
+    .setImage(message.guild.bannerURL() + "?size=2048")
+    message.channel.send({embed : ba})
+  }
+});
+
 
 const rply = [
 'ڕاوەستە با قوڵتر لە سیمات ڕابمێنم کێ دەزانێ ڕەنگە تاتۆدێیەوە من نەمێنم"];',
@@ -1138,7 +1365,7 @@ message.reply("**Set Prefix Working ✅**")
     let embed = new Discord.MessageEmbed()
     .setAuthor("SUGGESTION: " + message.author.tag, message.author.avatarURL())
     .setThumbnail(message.author.avatarURL())
-    .setColor("#ff2050")
+    .setColor("#9700ff")
     .setDescription(args.join(" "))
     .setTimestamp()
  
@@ -1150,15 +1377,18 @@ message.reply("**Set Prefix Working ✅**")
  
  
  
-  
- 
- 
- 
     message.channel.send("Sended Your Suggestion to  Suggestions Channel")
  
   }
 })
-
+ 
+ 
+ 
+  
+ 
+ 
+ 
+  
 client.on('message', msg => {
  if (msg.content.startsWith(PREFIX + 'senddm')) {
  
@@ -1171,7 +1401,7 @@ client.on('message', msg => {
       let alpha = msg.mentions.members.first()
       if (!alpha) return msg.channel.send()
       let alphaEmbed = new Discord.MessageEmbed()
-      .setTitle('ALVEN is here')
+      .setTitle('**ALVEN is here**')
       .setDescription(args.join(" "))
  
       client.users.cache.get(`${alpha.id}`).send(alphaEmbed)
