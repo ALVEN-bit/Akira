@@ -30,8 +30,8 @@ module.exports = {
 [**Invite Bot**](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)`)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-   .setColor("RANDOM")
-   message.react("<a:emoji_27:847407354005291018>")
+   .setColor("BLACK")
+   message.react("<a:emoji_34:813753858710175745>")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
