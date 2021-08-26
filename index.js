@@ -1365,9 +1365,6 @@ client.on("message", message => {
   }
 });
 
-client.on("message", msg => { if (msg.content === "سڵاو") { msg.reply( "سلاوبەخێربێی بۆ سێرفەرەکەمان تکایەچاوەرێکە تارۆل بەدەستێک دێتە خەت" ); }}
-
-
 client.on('ready', () => {
 var channel = client.channels.cache.get('877596742567215124');
     if (channel) channel.join();
