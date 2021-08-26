@@ -20,27 +20,6 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
 
 
-if(message.content.startsWith(`${prefix}status`)){
-    //define saymsg
-    const saymsg = message.content.slice(Number(prefix.length) + 5)
-    //define embed
-    const embed = new Discord.MessageEmbed()
-    .setColor("RANDOM")
-    .setAuthor("", "")
-    .setThumbnail(` `)
-    .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setTimestamp()
-    .setDescription(`
-**__Guilds__**
-${client.guilds.cache.size}
-**__Users__**
-${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
-**__Channels__**
-${client.channels.cache.size}
-**__Commands__**
-${client.commands.size}
-`)
-
   
 
 
