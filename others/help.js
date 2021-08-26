@@ -28,7 +28,7 @@ module.exports = {
 > \`ping\` • \`prefix\` • \`uptime\`
 > \`tinvites\` • \`sug\` • \`roleuser\`
 > \`se\` • \`avatar\` • \`sifo\`
-> \`chinfo\` • \`listemoji\`
+> \`chinfo\` • \`listemoji\` • \`stats\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
@@ -47,7 +47,7 @@ module.exports = {
 > \`setprefix\` • \`clear\` • \`lock\`
 > \`unlock\` • \`embed\` • \`vkick\`
 > \`chcreate\` • \`chdelete\`
-> \`addemoji\` • \`banner\`
+> \`addemoji\` • \`banner\` • \`say\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
