@@ -28,6 +28,7 @@ module.exports = {
 > \`ping\` • \`prefix\` • \`uptime\`
 > \`tinvites\` • \`sug\` • \`roleuser\`
 > \`se\` • \`avatar\` • \`sifo\`
+> \`chinfo\` • \`listemoji\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
@@ -46,6 +47,7 @@ module.exports = {
 > \`setprefix\` • \`clear\` • \`lock\`
 > \`unlock\` • \`embed\` • \`vkick\`
 > \`chcreate\` • \`chdelete\`
+> \`addemoji\` • \`banner\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
@@ -53,13 +55,13 @@ module.exports = {
 > \`boy\` • \`girl\` • \`couple\`
 > \`sad\` • \`cartoon\` • \`anime\`
 > \`neon\` • \`smoking\` • \`baby\`
-> \`animal\`
+> \`animal\` 
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
 <a:emoji_37:861585747219841074> | **Picture Command **
 > \`pboy\` • \`pgirl\` • \`pcouple\`
-> \`pemoji\` • \`panime\`
+> \`pemoji\` • \`panime\` • \`meme\`
 
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
