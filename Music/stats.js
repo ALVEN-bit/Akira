@@ -17,22 +17,21 @@ module.exports = {
     let helpEmbed = new MessageEmbed()
     .setThumbnail(``)
     .setImage(`https://media.discordapp.net/attachments/848815969233403934/850660018532777984/emoji_17.gif `)
-    .setTitle(`CAlms is One`)
+    .setTitle(`Akira is One`)
     .setDescription(`
-<a:emoji_17:850611627321327617> OWNER BOT <@!680407776593182735> <a:emoji_1:848805449155215391>
-<a:emoji_16:850611586921398283>
-<a:emoji_16:850611586921398283>
-<:g_:850633528697159710> [GITHUP](https://github.com/ALVEN-bit)
-<a:emoji_16:850611586921398283>
-[SERVER SUPPORT](https://discord.gg/am8FpWt3Yh)
-<a:emoji_16:850611586921398283>
-[SPONCAR SERVER](https://discord.gg/tgf)
-<a:emoji_16:850611586921398283>
-[__**Invite Bot You server**__](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)`)
+<a:emoji_82:836363781378408489> **__OWNER BOT__** <@!680407776593182735> <a:emoji_82:836363781378408489>
+
+[**__GITHUP__**](https://github.com/ALVEN-bit)
+
+[**__SERVER EDITOR ALVEN__**](https://discord.gg/am8FpWt3Yh)
+
+[**__TGF SQWAD SERVER__**](https://discord.gg/tgf)
+
+[**__Invite Bot You server__**](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)`)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM")
-   message.react("<a:emoji_27:847407354005291018>")
+   message.react("")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
