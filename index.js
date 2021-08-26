@@ -17,6 +17,131 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 //this fires when the BOT STARTS DO NOT TOUCH
 
 
+
+
+
+if(message.content.startsWith(`${prefix}status`)){
+    //define saymsg
+    const saymsg = message.content.slice(Number(prefix.length) + 5)
+    //define embed
+    const embed = new Discord.MessageEmbed()
+    .setColor("RANDOM")
+    .setAuthor("", "")
+    .setThumbnail(` `)
+    .setFooter(message.author.username, message.author.displayAvatarURL)
+    .setTimestamp()
+    .setDescription(`
+**__Guilds__**
+${client.guilds.cache.size}
+**__Users__**
+${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
+**__Channels__**
+${client.channels.cache.size}
+**__Commands__**
+${client.commands.size}
+`)
+
+    //send the Message
+    message.channel.send(embed)
+    message.react("<a:emoji_81:830444292111204382>")
+  } 
+
+
+
+
+client.on('message' , message => {
+      if(message.author.bot) return;
+     
+      if(message.content.startsWith(PREFIX + "rolebc")) {
+        if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+        let args = message.content.split(" ").slice(2);
+     var codes = args.join(' ')
+       
+        if(!codes) {
+          message.channel.send("قم بكتابة الرسالة | !rolebc @everyone message")
+            return;
+        }
+     
+     
+              var role = message.mentions.roles.first();
+                if(!role) {
+                  message.reply("لا توجد رتبة بهذا الاسم")
+                    return;
+                }
+            message.guild.members.filter(m => m.roles.get(role.id)).forEach(n => {
+              n.send(
+              "**" + "السيرفر :" + "\n" +
+              `${message.guild.name}` + "\n" +
+              "المرسل :" + "\n" +
+              `${message.author.tag}` + "\n" +
+              "الرسالة :" + "\n" +
+              `${codes}` + "**"
+              )
+            })
+            message.channel.send(`لقد تم ارسال هذه الرسالة الى ${message.guild.members.filter(m => m.roles.get(role.id)).size} عضو`)
+        }
+    });
+
+client.on("message", message => {
+  let args = message.content.split(" ");
+  if (args[0] === PREFIX + "hightRole") {
+    let user =
+      message.mentions.users.first() ||
+      client.users.cache.get(args[1]) ||
+      message.author;
+    if (!user) return message.channel.send(`> ❎ | I Can't Find This User.`);
+    let height = message.guild.member(user).roles.highest.id;
+    let heightR = message.guild.roles.cache.find(r => r.id === height);
+    let embed = new Discord.MessageEmbed()
+      .setAuthor(`${user.username} info`)
+      .addField(`Height Role:`, heightR)
+      .setFooter(
+        `Requsted By ${message.author.username}`,
+        message.author.displayAvatarURL()
+      )
+      .setThumbnail(user.displayAvatarURL());
+    message.channel.send(embed);
+  }
+});
+
+client.on('message', message => { 
+  if (!message.channel.guild) return;
+if(message.content == PREFIX + 'count') 
+var Black = new Discord.MessageEmbed()
+.setThumbnail(message.author.avatarURL())
+.setFooter(message.author.username, message.author.avatarURL())
+.setTitle('Info server ',`__${message.guild.name}__`)
+.addField('Total Bost',`__${message.guild.memberCount}__`)
+message.channel.send(Black);
+}); 
+
+
+client.on("message", async message => {
+  if (message.content.startsWith(PREFIX + "settopic")) {
+    if (!message.member.hasPermission("ADMINISTRATOR"))
+      return message.channel.send(
+        "**You need Administrator permission to use this command!**"
+      );
+    let topic = message.content
+      .split(" ")
+      .slice(1)
+      .join(" ");
+    if (!topic) return message.channel.send("**Shte bnwsa bo danany Topic**");
+    message.channel.setTopic(topic);
+    const embed = new Discord.MessageEmbed()
+      .setTitle("**Done check Description channel**")
+      .addField("Message", `${topic}`)
+      .addField("Channel", message.channel.name)
+      .addField("By", message.author.tag)
+      .setColor("#9700ff")
+      .setFooter("BY Alven  ");
+    message.channel.send(embed);
+  }
+});
+
+
+
+
 client.on('message', message => {
      if(!message.channel.guild) return;
  
@@ -339,6 +464,55 @@ if (message.content.startsWith(PREFIX + 'listemoji')) {
  
 }})
 
+
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "boom")) {
+    let bombs = [
+      "https://media.giphy.com/media/Xp98Vi5OBvhXpwA0Zp/giphy.gif",
+      "https://media.giphy.com/media/POnwee2RZBWmWWCeiX/giphy.gif",
+      "https://media.giphy.com/media/oywQ7OhnYupINQa0L4/giphy.gif",
+      "https://media.giphy.com/media/5aLrlDiJPMPFS/giphy.gif",
+      "https://media.giphy.com/media/l1BgS9aNtdCdjgkaQ/giphy.gif",
+      "https://media.giphy.com/media/d0NnEG1WnnXqg/giphy.gif",
+      "https://media.giphy.com/media/NmrqUdwGXPOog/giphy.gif",
+      "https://media.giphy.com/media/dpnfPvaCIHBrW/giphy.gif",
+      "https://media.giphy.com/media/mks5DcSGjhQ1a/giphy.gif",
+      "https://media.giphy.com/media/8wfoaIjVc0FBaLu5xH/giphy.gif",
+      "https://media.giphy.com/media/xThtanBNixj1O1m5oY/giphy.gif",
+      "https://media.giphy.com/media/fdGkCOiM0oOqI/giphy.gif",
+      "https://media.giphy.com/media/c862b2dAhJXYA/giphy.gif",
+      "https://media.giphy.com/media/CepTYjGRbV1ba/giphy.gif",
+      "https://media.giphy.com/media/sRGCQ7INgSD0qbTqB5/giphy.gif",
+      "https://media.giphy.com/media/ZJYOwl8SbFsic/giphy.gif",
+      "https://media.giphy.com/media/3oEhmKspQX9EN48HNm/giphy.gif",
+      "https://media.giphy.com/media/l1KVcAP6jvP9r4MaA/giphy.gif",
+      "https://media.giphy.com/media/j2mY6orBJqAdG/giphy.gif",
+      "https://media.giphy.com/media/3oz8xEqn8AGAQbR0yY/giphy.gif",
+      "https://media.giphy.com/media/l4lQW9KfRQscU0ds4/giphy.gif",
+      "https://media.giphy.com/media/XathaB5ILqSME/giphy.gif",
+      "https://media.giphy.com/media/26AHvF2p5pridaSf6/giphy.gif",
+      "https://media.giphy.com/media/Nlur5uO8GkjC0/giphy.gif",
+      "https://media.giphy.com/media/l1J3preURPiwjRPvG/giphy.gif",
+      "https://media.giphy.com/media/8cdZit2ZcjTri/giphy.gif",
+      "https://media.giphy.com/media/3o7btNa0RUYa5E7iiQ/giphy.gif",
+      "https://media.giphy.com/media/V88pTEefkoOFG/giphy.gif",
+      "https://media.giphy.com/media/rfWAomOTPeOo8/giphy.gif"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `${message.author.username} BOOMED`,
+          image: {
+            url: bombs[Math.floor(Math.random() * bombs.length)]
+          }
+        }
+      })
+      .catch(e => {
+        client.log.error(e);
+      });
+  }
+});
 
 
 
@@ -1245,6 +1419,151 @@ client.on("message", async message => {
   }
 });
 
+////////////////////
+
+client.on("message", message => {
+  var args = message.content.split(" ").slice(1);
+  var msg = message.content.toLowerCase();
+  if (!message.guild) return;
+  if (!msg.startsWith(PREFIX + "role")) return;
+  if (!message.member.hasPermission("MANAGE_ROLES"))
+    return message.channel.send(" **ليس لديك صلاحيات :rolling_eyes:**");
+  if (msg.toLowerCase().startsWith(PREFIX + "rerole")) {
+    if (!args[0])
+      return message.reply("**:x: يرجى وضع الشخص المراد سحب منه الرتبة**");
+    if (!args[1])
+      return message.reply("**:x: يرجى وضع الرتبة المراد سحبها من الشخص**");
+    var role = msg
+      .split(" ")
+      .slice(2)
+      .join(" ")
+      .toLowerCase();
+    var role1 = message.guild.roles
+      .filter(r => r.name.toLowerCase().indexOf(role) > -1)
+      .first();
+    if (!role1)
+      return message.reply("**:x: يرجى وضع الرتبة المراد سحبها من الشخص**");
+    if (message.mentions.members.first()) {
+      if (role1.position >= message.member.highestRole.position)
+        return message.channel.send(
+          " اانت لا تمتلك الصلاحيات الكافية :rolling_eyes:"
+        );
+
+      message.mentions.members.first().removeRole(role1);
+      return message.reply(
+        "**:white_check_mark: [ " +
+          role1.name +
+          " ] رتبة [ " +
+          args[0] +
+          " ] تم سحب من **"
+      );
+    }
+    if (args[0].toLowerCase() == "all") {
+      if (role1.position >= message.member.highestRole.position)
+        return message.channel.send(
+          "انت لا تمتلك الصلاحيات الكافية :rolling_eyes:"
+        );
+
+      message.guild.members.forEach(m => m.removeRole(role1));
+      return message.reply(
+        "**:white_check_mark: [ " + role1.name + " ] تم سحب من الكل رتبة**"
+      );
+    } else if (args[0].toLowerCase() == "bots") {
+      if (role1.position >= message.member.highestRole.position)
+        return message.channel.send(
+          "انت لا تمتلك الصلاحيات الكافية :rolling_eyes:"
+        );
+
+      message.guild.members
+        .filter(m => m.user.bot)
+        .forEach(m => m.removeRole(role1));
+      return message.reply(
+        "**:white_check_mark: [ " + role1.name + " ] تم سحب من البوتات رتبة**"
+      );
+    } else if (args[0].toLowerCase() == "humans") {
+      if (role1.position >= message.member.highestRole.position)
+        return message.channel.send(
+          "انت لا تمتلك الصلاحيات الكافية :rolling_eyes:"
+        );
+
+      message.guild.members
+        .filter(m => !m.user.bot)
+        .forEach(m => m.removeRole(role1));
+      return message.reply(
+        "**:white_check_mark: [ " + role1.name + " ] تم سحب من البشريين رتبة**"
+      );
+    }
+  } else {
+    if (!args[0])
+      return message.reply("**:x: يرجى وضع الشخص المراد اعطائها الرتبة**");
+    if (!args[1])
+      return message.reply("**:x: يرجى وضع الرتبة المراد اعطائها للشخص**");
+    var role = msg
+      .split(" ")
+      .slice(2)
+      .join(" ")
+      .toLowerCase();
+    var role1 = message.guild.roles
+      .filter(r => r.name.toLowerCase().indexOf(role) > -1)
+      .first();
+    if (!role1)
+      return message.reply("**:x: يرجى وضع الرتبة المراد اعطائها للشخص**");
+    if (message.mentions.members.first()) {
+      if (role1.position >= message.member.highestRole.position)
+        return message.channel.send(
+          "انت لا تمتلك الصلاحيات الكافية :rolling_eyes:"
+        );
+
+      message.mentions.members.first().addRole(role1);
+      return message.reply(
+        "**:white_check_mark: [ " +
+          role1.name +
+          " ] رتبة [ " +
+          args[0] +
+          " ] تم اعطاء **"
+      );
+    }
+    if (args[0].toLowerCase() == "all") {
+      if (role1.position >= message.member.highestRole.position)
+        return message.channel.send(
+          "انت لا تمتلك الصلاحيات الكافية :rolling_eyes:"
+        );
+      message.guild.members.forEach(m => m.addRole(role1));
+      return message.reply(
+        "**:white_check_mark: [ " + role1.name + " ] تم اعطاء الكل رتبة**"
+      );
+    } else if (args[0].toLowerCase() == "bots") {
+      if (role1.position >= message.member.highestRole.position)
+        return message.channel.send(
+          "انت لا تمتلك الصلاحيات الكافية :rolling_eyes:"
+        );
+
+      message.guild.members
+        .filter(m => m.user.bot)
+        .forEach(m => m.addRole(role1));
+      return message.reply(
+        "**:white_check_mark: [ " + role1.name + " ] تم اعطاء البوتات رتبة**"
+      );
+    } else if (args[0].toLowerCase() == "humans") {
+      if (role1.position >= message.member.highestRole.position)
+        return message.channel.send(
+          "انت لا تمتلك الصلاحيات الكافية :rolling_eyes:"
+        );
+
+      message.guild.members
+        .filter(m => !m.user.bot)
+        .forEach(m => m.addRole(role1));
+      return message.reply(
+        "**:white_check_mark: [ " + role1.name + " ] تم اعطاء البشريين رتبة**"
+      );
+    }
+  }
+});
+
+
+
+
+
 client.on('message', function(message) {
     if(message.content.startsWith(PREFIX  + "report")) {
         let messageArgs = message.content.split(" ").slice(1).join(" ");
@@ -1578,7 +1897,7 @@ client.on(`message`, async (message) => {
 > \`${client.ws.ping}\`
 
 > **Version **
-> \`V2\`
+> \`${process.version}\`
 
 `)
 
