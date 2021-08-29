@@ -27,7 +27,7 @@ module.exports = {
 > \`invite\` • \`support\` • \`about\`
 > \`ping\` • \`prefix\` • \`uptime\`
 > \`tinvites\` • \`sug\` • \`roleuser\`
-> \`se\` • \`avatar\` • \`sifo\`
+> \`se\` • \`avatar\` • \`sifo\` • \`user\`
 > \`chinfo\` • \`listemoji\` • \`stats\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
