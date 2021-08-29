@@ -18,7 +18,6 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
 
 client.on("message", async msg => {
-  const auto = require("./data/auto.json");
   if (!auto) return console.log(`**هناك خطأ في ملف الرد للبوت**`);
   let args = msg.content.split(" ");
   if (msg.content.startsWith(prefix + "auto")) {
