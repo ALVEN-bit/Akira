@@ -47,7 +47,7 @@ client.on("message", message => {
         .addField("**Bot**", `${heg.bot}`, true)
         .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
         .setColor("#9700ff")     
-        .setFooter("BLACK SESTAM");
+        .setFooter("By ALVEN");
   
     message.channel.send(embed);
   }
