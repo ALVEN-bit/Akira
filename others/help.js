@@ -46,7 +46,7 @@ module.exports = {
 > \`roleadd\` • \`roleremove\`
 > \`setprefix\` • \`clear\` • \`lock\`
 > \`unlock\` • \`embed\` • \`vkick\`
-> \`chcreate\` • \`chdelete\`
+> \`chcreate\` • \`chdelete\` • \`slowmode\`
 > \`addemoji\` • \`banner\` • \`say\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
