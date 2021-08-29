@@ -29,6 +29,7 @@ module.exports = {
 > \`tinvites\` • \`sug\` • \`roleuser\`
 > \`se\` • \`avatar\` • \`sifo\` • \`user\`
 > \`chinfo\` • \`listemoji\` • \`stats\`
+> \`allbots\` 
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
