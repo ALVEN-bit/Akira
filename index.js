@@ -17,7 +17,124 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 //this fires when the BOT STARTS DO NOT TOUCH
 
 
-
+client.on("message", async msg => {
+  const auto = require("./data/auto.json");
+  if (!auto) return console.log(`**هناك خطأ في ملف الرد للبوت**`);
+  let args = msg.content.split(" ");
+  if (msg.content.startsWith(prefix + "auto")) {
+    if (msg.author.bot) return;
+    if (msg.channel.type == "dm") return msg.channel.send(new Discord.MessageEmbed().setColor("RED").setDescription(error + ` **You Can't Use This Command In DM's!**`).setFooter(`Request By ${msg.author.tag}`).setTimestamp())
+    if (!msg.member.hasPermission("ADMINISTRATOR")) return;
+    if (!args[1])
+      return msg.channel.send(new Discord.MessageEmbed().setDescription(`**Command: auto**
+  auto respoce.
+  
+  **Usage:**
+  ${prefix}auto msg reply
+  ${prefix}dauto msg reply 
+  **Examples:**
+  ${prefix}auto msg reply
+  ${prefix}auto hi hello
+  ${prefix}dauto msg reply  
+  ${prefix}dauto hi hello
+  **`));
+    if (!args[2])
+      return msg.channel.send(new Discord.MessageEmbed().setDescription(`**Command: auto**
+  auto respoce.
+  
+  **Usage:**
+  ${prefix}auto msg reply
+  ${prefix}dauto msg reply 
+  **Examples:**
+  ${prefix}auto msg reply
+  ${prefix}auto hi hello
+  ${prefix}dauto msg reply  
+  ${prefix}dauto hi hello
+  **`));
+    auto[args[1] + msg.guild.id] = {
+      msg: args[1],
+      guild: msg.guild.id,
+      reply: args[2]
+    };
+                  if (cooldown_command.has(msg.author.id)) {
+            msg.reply(new Discord.MessageEmbed().setDescription(`**${msg.author.username},  Cooldown : 5 seconds**`))
+        } else {
+    fs.writeFile("data/auto.json", JSON.stringify(auto, null, 5), err => {
+      console.error(err);
+    });
+    msg.channel.send(`**:white_check_mark:  تم اضافة الرد التلقائي**`);
+                cooldown_command.add(msg.author.id);
+            setTimeout(() => {
+                cooldown_command.delete(msg.author.id);
+            }, 5000)
+        }
+  }
+  if (msg.content.startsWith(prefix + "dauto")) {
+    if (msg.author.bot) return;
+    if (msg.channel.type == "dm") return msg.channel.send(new Discord.MessageEmbed().setColor("RED").setDescription(error + ` **You Can't Use This Command In DM's!**`).setFooter(`Request By ${msg.author.tag}`).setTimestamp())
+    if (!msg.member.hasPermission("ADMINISTRATOR")) return;
+    if (!args[1])
+      return msg.channel.send(new Discord.MessageEmbed().setDescription(`**Command: auto**
+  auto respoce.
+  
+  **Usage:**
+  ${prefix}auto msg reply
+  ${prefix}dauto msg reply 
+  **Examples:**
+  ${prefix}auto msg reply
+  ${prefix}auto hi hello
+  ${prefix}dauto msg reply  
+  ${prefix}dauto hi hello
+  **`));
+    if (!auto[args[1] + msg.guild.id])
+      return msg.channel.send(
+        `**${error} لا استطيع العثور على الرد**`
+      );
+    delete auto[args[1] + msg.guild.id];
+                  if (cooldown_command.has(msg.author.id)) {
+            msg.reply(new Discord.MessageEmbed().setDescription(`**${msg.author.username},  Cooldown : 5 seconds**`))
+        } else {
+    fs.writeFile("data/auto.json", JSON.stringify(auto, null, 5), err => {
+      console.error(err);
+    });
+    msg.channel.send(`**:white_check_mark: تم حذف الرد **`);
+                cooldown_command.add(msg.author.id);
+            setTimeout(() => {
+                cooldown_command.delete(msg.author.id);
+            }, 5000)
+        }
+  }
+  let ncr = msg.content;
+  if (!auto[ncr + msg.guild.id]) return;
+  if (ncr == auto[ncr + msg.guild.id].msg)
+    return msg.channel.send(auto[ncr + msg.guild.id].reply);
+  msg.delete(5000);
+}).on("message", msg => {
+  if (msg.content.startsWith(prefix + "help auto")) {
+    if (msg.author.bot) return;
+    if (msg.channel.type == "dm") return msg.channel.send(new Discord.MessageEmbed().setColor("RED").setDescription(error + ` **You Can't Use This Command In DM's!**`).setFooter(`Request By ${msg.author.tag}`).setTimestamp())
+                    if (cooldown_command.has(msg.author.id)) {
+            msg.reply(new Discord.MessageEmbed().setDescription(`**${msg.author.username},  Cooldown : 5 seconds**`))
+        } else {
+    msg.channel.send(new Discord.MessageEmbed().setDescription(`**Command: auto**
+  auto respoce.
+  
+  **Usage:**
+  ${prefix}auto msg reply
+  ${prefix}dauto msg reply 
+  **Examples:**
+  ${prefix}auto msg reply
+  ${prefix}auto hi hello
+  ${prefix}dauto msg reply  
+  ${prefix}dauto hi hello
+  **`))
+                  cooldown_command.add(msg.author.id);
+            setTimeout(() => {
+                cooldown_command.delete(msg.author.id);
+            }, 5000)
+        }
+  }
+})
 
 
   
