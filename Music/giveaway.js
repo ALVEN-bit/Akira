@@ -33,7 +33,7 @@ React with 🎉 to enter!
 Hosted by: ${message.author}`)
       .setTimestamp()
       .setFooter(`Ends at`)
-      .setColor(`#FC00FF`);
+      .setColor(`#146DF6`);
     //delete the Command
     message.delete({timeout: 300})
     let m = await channel.send(Embed);
@@ -53,7 +53,7 @@ Hosted by: ${message.author}`)
       channel.send(
         `**The winner of the giveaway for**
 #️⃣|${channel}
-<a:winner:817425780992114708>|${winner}`
+<a:winner:817425780992114708>|${message.author}`
       );
     }, ms(args[0]));
   },
