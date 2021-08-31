@@ -27,7 +27,7 @@ module.exports = {
 
 [__**Black Hat Staff**__](https://discord.gg/tgf)
 
-[**Invite Bot**](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)`)
+[__**Invite Bot**__](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)`)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("BLACK")
