@@ -19,7 +19,8 @@ module.exports = {
     .setImage(`https://media.discordapp.net/attachments/848815969233403934/850660018532777984/emoji_17.gif `)
     .setTitle(`Akira is One`)
     .setDescription(`
- OWNER BOT <@!680407776593182735>
+ {__**Developer Bot**__}
+ <@!680407776593182735>
 
 [__**GITHUP**__](https://github.com/ALVEN-bit)
 
