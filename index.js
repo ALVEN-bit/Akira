@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login("ODI4MzA4OTkzMTcyMDQ1ODQ1.YGns3Q.tHOfk0_EWKvJzCw1ABNJR2f_K68");
+client.login("ODI4MzA4OTkzMTcyMDQ1ODQ1.YGns3Q.dkv4jS6qc6gCsqVlU4y9v0zq-_4");
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -21,14 +21,6 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
 
 
-
-
-client.on("guildCreate" , AQUAMAN => {
-  if(AQUAMAN.memberCount < 90){
-    console.log(`  name ( ${AQUAMAN.name} ) zhmaray memberakan ( ${AQUAMAN.memberCount}) created by ALVEN`)
-    AQUAMAN.leave();
-  }
-})
 
 
 client.on('message', message => {
