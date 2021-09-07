@@ -54,10 +54,7 @@ execute(message) {
         //send approve msg
         return message.channel.send(nowPlaying);
      
-        if (ms > 0 && ms<10000) {
-        nowPlaying.addField("\u200b", "**[" + createBar((ms == 0 ? seek : ms), seek, 25, "▬", "⚪️")[0] + "]**\n**" + new Date(seek * 1000).toISOString().substr(11, 8) + " / " + (ms == 0 ? " ◉ LIVE" : new Date(ms * 1000).toISOString().substr(11, 8))+ "**" , false );
-        //send approve msg
-        return message.channel.send(nowPlaying);
+       
       }
   }
 };
