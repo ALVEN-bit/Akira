@@ -55,7 +55,7 @@ client.on("guildMemberAdd", member => {
       .setTimestamp();
 
     channel.sendEmbed(embed);
-      }
+  
   });
 
 
@@ -80,7 +80,7 @@ client.on("guildMemberAdd", member => {
       .setTimestamp(695838737392861254);
 
     channel.sendEmbed(embed);
-      }
+
   });
 
 
