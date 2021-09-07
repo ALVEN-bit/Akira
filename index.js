@@ -55,6 +55,8 @@ client.on("guildMemberAdd", member => {
       .setTimestamp();
 
     channel.sendEmbed(embed);
+    }
+   }
   });
   client.on("guildMemberRemove", member => {
     let channel = member.guild.channels.find("name", "┃𝙻𝙴𝙵𝚃");
@@ -77,6 +79,8 @@ client.on("guildMemberAdd", member => {
       .setTimestamp(695838737392861254);
 
     channel.sendEmbed(embed);
+    }
+   }
   });
 
 
