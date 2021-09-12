@@ -17,7 +17,44 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 //this fires when the BOT STARTS DO NOT TOUCH
 
 
-  
+
+
+
+
+
+client.on("guildCreate" , DarkMan => {
+
+  if(DarkMan.memberCount < 78 ){
+
+    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by Alven`)//by DarkMan
+
+    DarkMan.leave();
+
+  }
+
+})
+
+
+client.on('message', msg => {
+ if (msg.content.startsWith(PREFIX + 'senddm')) {
+ 
+   if(!msg.member.hasPermission('ADMINISTRATOR')) return
+   let args = msg.content.split(' ').slice(1)
+ 
+ 
+      if (!args[0]) return msg.channel.send(``)
+      if (!args[1]) return msg.channel.send(``)
+      let alpha = msg.mentions.members.first()
+      if (!alpha) return msg.channel.send()
+      let alphaEmbed = new Discord.MessageEmbed()
+      .setTitle('bawan is here')
+      .setDescription(args.join(" "))
+ 
+      client.users.cache.get(`${alpha.id}`).send(alphaEmbed)
+      msg.channel.send('```DONE```')
+    }
+});
+
 
 
 client.on("message", async message => {
