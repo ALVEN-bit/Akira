@@ -20,7 +20,28 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
   
 
 
-
+client.on("message", async message => {
+let prefix2 = await db.fetch(`prefix_${message.guild.id}`);
+if (prefix2 === null) prefix2 = Prefix;
+const prefix = prefix2;
+if (!message.content.startsWith(prefix)) return;
+const args = message.content.slice(prefix.length).trim().split(/ +/g);
+const cmd = args.shift().toLowerCase();
+if (cmd === "prefix" || cmd === "setprefix") {
+if (!message.guild) return;
+if (!message.guild.member(message.author).hasPermission("ADMINISTRATOR"))
+return message.reply("**- You Don't Have `ADMINISTRATOR` Permission.**");
+if (!args[0]) return message.channel.send(`**- Please tell me what a prefix !!**`);
+if (args[0].length > 3) {
+  return message.channel.send("**Please tell me prefix under 3 numbers!!**")
+}
+db.set(`prefix_${message.guild.id}`, args[0]);
+message.channel.send(`**✅ Done, Set New Prefix \`[${args[0]}]\` From Your Server.**`);
+}
+if (cmd === "test") { // كود test للتجربة
+message.reply("**Set Prefix Working ✅**")
+}
+});
 
 
 client.on('message', message => {
