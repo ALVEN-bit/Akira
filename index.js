@@ -1895,7 +1895,7 @@ client.on(`ready`, () => {
           return;
         //if alone 
         if (member.voice.channel.members.size === 1) 
-        { return member.voice.channel.leave(); }
+        { return member.voice.channel.join(); }
       });
     client.user.setStatus("idle");
     client.user.setActivity(`Type: ${PREFIX}help `, { type: "PLAYING"});
