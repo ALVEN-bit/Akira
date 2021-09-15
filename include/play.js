@@ -23,7 +23,7 @@ module.exports = {
     const queue = message.client.queue.get(message.guild.id);
     
     if (!song) {
-      queue.channel.join();
+      queue.channel.leave();
       message.client.queue.delete(message.guild.id);
       const endembed = new MessageEmbed().setColor("#FF0000")
         .setAuthor(`Music Stop `, "")
