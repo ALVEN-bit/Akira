@@ -25,7 +25,7 @@ var sahand = ["https://media.discordapp.net/attachments/855771727434481676/87933
 client.on("message", message => {
 if(message.content.startsWith(PREFIX + "maza")) {
 let random = sahand[Math.floor(Math.random() * sahand.length)]
-let embed = new MessageEmbed()
+let embed = new Discord.MessageEmbed()
 .setTitle("Best Maza Of Discord Kurdish 😂")
 .setImage(`${random}`)
 message.channel.send(embed)
