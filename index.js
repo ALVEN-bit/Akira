@@ -20,7 +20,7 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "maza")) {
+  if (message.content.startsWith(PREFIX + "()()")) {
     let man = [
       "https://media.discordapp.net/attachments/855771727434481676/879336353941299230/image0.png",
       "https://media.discordapp.net/attachments/855771727434481676/879336339827466261/image0.png",
