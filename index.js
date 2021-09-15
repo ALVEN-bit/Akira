@@ -20,7 +20,17 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
 
 
-
+var sahand = ["https://media.discordapp.net/attachments/855771727434481676/879336426150441010/image0.png","https://media.discordapp.net/attachments/855771727434481676/879336353941299230/image0.png","https://media.discordapp.net/attachments/855771727434481676/879336339827466261/image0.png",
+"https://media.discordapp.net/attachments/855771727434481676/879336273649733642/image0.png","https://media.discordapp.net/attachments/855771727434481676/879336235108270090/image0.png","https://media.discordapp.net/attachments/872569502288711780/880415715847442432/image0.jpg","https://media.discordapp.net/attachments/853265500347170867/886411138424774676/Screenshot_2021-09-12-03-42-07-462_com.facebook.katana.jpg"]
+client.on("messageCreate", message => {
+if(message.content.startsWith(prefix + "maza")) {
+let random = sahand[Math.floor(Math.random() * sahand.length)]
+let embed = new MessageEmbed()
+.setTitle("Best Maza Of Discord Kurdish 😂")
+.setImage(`${random}`)
+message.channel.send(embed)
+}
+});
 
 client.on("guildCreate" , DarkMan => {
 
