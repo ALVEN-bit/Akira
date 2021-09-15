@@ -142,7 +142,7 @@ let thumb;
         i18n.__mf("play.startedPlaying", { title: song.title, url: song.url })
       );
  
-        .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+   
       var playingMessage = await queue.textChannel.send(newsong);
       await playingMessage.react("⏭");
       await playingMessage.react("⏯");
