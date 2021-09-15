@@ -133,16 +133,23 @@ module.exports = {
     }
 
 
-let thumb;
+  let thumb;
     if (song.thumbnail === undefined) thumb = "";
     else thumb = song.thumbnail.url;
 
-    try {
-      var playingMessage = await queue.textChannel.send(
-        i18n.__mf("play.startedPlaying", { title: song.title, url: song.url })
-      );
- 
-   
+  try {
+      let embed = new MessageEmbed()
+           const channel = message.member.voice.channel
+      const newsong = new MessageEmbed()
+        .setTitle(":gem: "+song.title)
+        .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
+        .addField("Voice Channel 📣 :",channel.name)
+        .addField("Text Channel 🗯️ :",message.channel.name)
+        .addField("Voulome ❄️ :",100)
+        .setURL(song.url)
+        .setColor("#146DF6")
+        .setThumbnail(thumb)
+        .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
       await playingMessage.react("⏭");
       await playingMessage.react("⏯");
