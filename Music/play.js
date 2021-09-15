@@ -32,7 +32,7 @@ async execute(message, args, client) {
     //If no args return
     if (!args.length)
       return attentionembed(message, `Usage: ${message.client.prefix}play <YouTube URL | Video Name | Soundcloud URL>`);
-    message.react("<:emoji_4:822203026776391711>").catch(console.error);
+    message.react("").catch(console.error);
     const permissions = channel.permissionsFor(message.client.user);
     if (!permissions.has("CONNECT"))
       return attentionembed(message, "I need permissions to join your channel!");
@@ -57,24 +57,24 @@ const search = args.join(" ");
     try {
       if (serverQueue) {
         if (urlValid) {
-          message.channel.send(new MessageEmbed().setColor("BLACK")
+          message.channel.send(new MessageText().setColor("BLACK")
             .setDescription(`**🔎 Searching 🖇 [\`LINK\`](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("BLACK")
+          message.channel.send(new MessageText().setColor("BLACK")
             .setDescription(`**🔎 Searching \`${args.join(" ")}\`**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
-        message.channel.send(new MessageEmbed().setColor("BLACK")
+        message.channel.send(new MessageText().setColor("BLACK")
           .setDescription(`**✔️ Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
-          message.channel.send(new MessageEmbed().setColor("BLACK")
+          message.channel.send(new MessageText().setColor("BLACK")
             .setDescription(`**🔎 Searching 🖇 [\`LINK\`](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("BLACK")
+          message.channel.send(new MessageText().setColor("BLACK")
             .setDescription(`**🔎 Searching \`${args.join(" ")}\`**`))
         }
         queueConstruct.connection.voice.setSelfDeaf(true);
