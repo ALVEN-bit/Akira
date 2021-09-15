@@ -23,10 +23,10 @@ module.exports = {
     const queue = message.client.queue.get(message.guild.id);
     
     if (!song) {
-      queue.channel.leave();
+      queue.channel.join();
       message.client.queue.delete(message.guild.id);
       const endembed = new MessageEmbed().setColor("#FF0000")
-        .setAuthor(`Music Stop `, "https://cdn.discordapp.com/attachments/793225556501987358/831209697280917524/PicsArt_04-12-07.50.28.jpg")
+        .setAuthor(`Music Stop `, "")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
@@ -131,23 +131,17 @@ module.exports = {
       });
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
     }
-    
-  let thumb;
-    if (song.thumbnail === undefined) thumb = "https://cdn.discordapp.com/attachments/778600026280558617/781024479623118878/ezgif.com-gif-maker_1.gif";
+
+
+let thumb;
+    if (song.thumbnail === undefined) thumb = "";
     else thumb = song.thumbnail.url;
 
-  try {
-      let embed = new MessageEmbed()
-           const channel = message.member.voice.channel
-      const newsong = new MessageEmbed()
-        .setTitle(":gem: "+song.title)
-        .addField("Time ⏱ :", `\`${song.duration} Minutes 🖇\``, true)
-        .addField("Voice Channel 📣 :",channel.name)
-        .addField("Text Channel 🗯️ :",message.channel.name)
-        .addField("Voulome ❄️ :",100)
-        .setURL(song.url)
-        .setColor("#146DF6")
-        .setThumbnail(thumb)
+    try {
+      var playingMessage = await queue.textChannel.send(
+        i18n.__mf("play.startedPlaying", { title: song.title, url: song.url })
+      );
+ 
         .setFooter(`Requested by: ${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
       var playingMessage = await queue.textChannel.send(newsong);
       await playingMessage.react("⏭");
