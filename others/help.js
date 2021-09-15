@@ -23,7 +23,7 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-<a:emoji_17:855062869934080030> | **User Commands**
+** | User Commands**
 > \`invite\` • \`support\` • \`about\`
 > \`ping\` • \`prefix\` • \`uptime\`
 > \`tinvites\` • \`sug\` • \`roleuser\`
@@ -33,7 +33,7 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-<a:emoji_39:862473578799955969> | **Music Commands**
+** | Music Commands**
 > \`play\` • \`skip\` • \`skipto\`
 > \`stop\` • \`volume\` • \`nowplaying\`
 > \`shuffle\` • \`search\` • \`resume\`
@@ -41,8 +41,8 @@ module.exports = {
 > \`lyrics\` • \`radio\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-
-<a:emoji_19:855064009639329812> | **Moderation Commands**
+ 
+** | Moderation Commands**
 > \`ban\` • \`unban\` • \`setnick\`
 > \`roleadd\` • \`roleremove\`
 > \`setprefix\` • \`clear\` • \`lock\`
@@ -52,7 +52,7 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-<a:emoji_33:856616986422935583> | **Gif Commands**
+** | Gif Commands**
 > \`boy\` • \`girl\` • \`couple\`
 > \`sad\` • \`cartoon\` • \`anime\`
 > \`neon\` • \`smoking\` • \`baby\`
@@ -60,33 +60,33 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-<a:emoji_37:861585747219841074> | **Picture Command **
+** | Picture Command **
 > \`pboy\` • \`pgirl\` • \`pcouple\`
 > \`pemoji\` • \`panime\` • \`meme\`
 
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-<a:emoji_40:862473590213705768> | **Text Commands**
+** | Text Commands**
 > \`textkurd\` • \`textengli\`
 > \`textarab\` • \`textturk\`
 > \`textpers\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-<a:emoji_41:863748588915523604> | **Game Commands**
+** | Game Commands**
 > \`kiss\` • \`slap\` • \`hug\`
 > \`feed\` • \`cuddle\` • \`pat\`
 > \`poke\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-<a:emoji_24:856306109940629544> | **Links**
-[__**Support**__](https://discord.gg/wTESwYkdwY) | [__**Invite**__](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
+> ** | Links**
+[__**Support**__](https://discord.gg/am8FpWt3Yh) | [__**Invite**__](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("BLACK");
-   message.react("<a:emoji_84:836364501308669974>")
+   message.react("")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
