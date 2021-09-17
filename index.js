@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login("ODI4MzA4OTkzMTcyMDQ1ODQ1.YGns3Q.A9xr-YAGnIT6q5dCIii9YVA5ZWg");
+client.login("ODI4MzA4OTkzMTcyMDQ1ODQ1.YGns3Q.UPGalOI5hGJXrMmaUBmRLBv5gqE");
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -22,7 +22,7 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
 
 client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "()()")) {
+  if (message.content.startsWith(PREFIX + "(maza)")) {
     let man = [
       "https://media.discordapp.net/attachments/855771727434481676/879336353941299230/image0.png",
       "https://media.discordapp.net/attachments/855771727434481676/879336339827466261/image0.png",
