@@ -16,14 +16,14 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(``)
-    .setImage(`https://media.discordapp.net/attachments/827288710265045053/879419178933694504/image0.gif`)
+    .setImage(`https://images-ext-1.discordapp.net/external/8dnWClB7RQReD53qvyYe09bdJMAmXP3q-4cAthMuI5c/https/media.discordapp.net/attachments/827288710265045053/879419178933694504/image0.gif`)
     .setTitle(`**Akira Help**`)
     .setDescription(`
 
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-** | User Commands**
+ | User Commands**
 > \`invite\` • \`support\` • \`about\`
 > \`ping\` • \`prefix\` • \`uptime\`
 > \`tinvites\` • \`sug\` • \`roleuser\`
@@ -33,7 +33,7 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-** | Music Commands**
+ | **Music Commands**
 > \`play\` • \`skip\` • \`skipto\`
 > \`stop\` • \`volume\` • \`nowplaying\`
 > \`shuffle\` • \`search\` • \`resume\`
@@ -41,8 +41,8 @@ module.exports = {
 > \`lyrics\` • \`radio\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
- 
-** | Moderation Commands**
+
+ |** Moderation Commands**
 > \`ban\` • \`unban\` • \`setnick\`
 > \`roleadd\` • \`roleremove\`
 > \`setprefix\` • \`clear\` • \`lock\`
@@ -52,37 +52,36 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-** | Gif Commands**
+ | **Gif Commands**
 > \`boy\` • \`girl\` • \`couple\`
 > \`sad\` • \`cartoon\` • \`anime\`
 > \`neon\` • \`smoking\` • \`baby\`
-> \`animal\` 
+> \`animal\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-** | Picture Command **
+ | **Picture Command **
 > \`pboy\` • \`pgirl\` • \`pcouple\`
 > \`pemoji\` • \`panime\` • \`meme\`
 
-
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-** | Text Commands**
+ | **Text Commands**
 > \`textkurd\` • \`textengli\`
 > \`textarab\` • \`textturk\`
 > \`textpers\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-** | Game Commands**
+ | **Game Commands**
 > \`kiss\` • \`slap\` • \`hug\`
 > \`feed\` • \`cuddle\` • \`pat\`
 > \`poke\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-
-> ** | Links**
-[__**Support**__](https://discord.gg/am8FpWt3Yh) | [__**Invite**__](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
+ 
+| **Links**
+[__**Support**__](https://discord.gg/black-hat) | [__**Invite**__](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("BLACK");
@@ -91,3 +90,4 @@ module.exports = {
 
   }
 };
+
