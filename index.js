@@ -1984,7 +1984,7 @@ client.on(`message`, async (message) => {
     .setTimestamp()
     .setDescription(`
 
-[{Support}](https://discord.gg/wTESwYkdwY)
+[{Support}](https://discord.gg/black-hat)
 
 [{Invite}](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 
@@ -1993,7 +1993,7 @@ client.on(`message`, async (message) => {
 > <@!716796150656794645>
 
 > **Akira Bot**
-> __**Prefix**__ { **,** }
+> __**Prefix**__ { **-** }
 
 > **Servers **
 > \`${client.guilds.cache.size}\`
