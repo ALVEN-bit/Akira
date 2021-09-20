@@ -85,7 +85,7 @@ module.exports = {
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("BLACK");
-   message.react("")
+   message.reply
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
