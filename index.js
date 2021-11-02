@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login("ODI4MzA4OTkzMTcyMDQ1ODQ1.YGns3Q.UPGalOI5hGJXrMmaUBmRLBv5gqE");
+client.login("ODI4MzA4OTkzMTcyMDQ1ODQ1.YGns3Q.fK0WXh-VXruWRiGfHhA-HjDSsXI");
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -18,34 +18,6 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
 
 
-
-
-
-client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "(maza)")) {
-    let man = [
-      "https://media.discordapp.net/attachments/855771727434481676/879336353941299230/image0.png",
-      "https://media.discordapp.net/attachments/855771727434481676/879336339827466261/image0.png",
-      "https://media.discordapp.net/attachments/855771727434481676/879336273649733642/image0.png",
-      "https://media.discordapp.net/attachments/855771727434481676/8793362351082700https://media.discordapp.net/attachments/855771727434481676/879336426150441010/image0.png90/image0.png",
-      "https://media.discordapp.net/attachments/872569502288711780/880415715847442432/image0.jpg",
-      "https://media.discordapp.net/attachments/853265500347170867/886411138424774676/Screenshot_2021-09-12-03-42-07-462_com.facebook.katana.jpg",
-   ];
-
-    message.channel
-      .send({
-        embed: {
-          description: `${message.author.username}.  ** Best Maza Of Discord Kurdish 😂**  `,
-          image: {
-            url: man[Math.floor(Math.random() * man.length)]
-          }
-        }
-      })
-      .catch(e => {
-        client.log.error(e);
-      });
-  }
-});
 
 
 
