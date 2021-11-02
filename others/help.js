@@ -23,7 +23,7 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
- | User Commands**
+ | **User Commands**
 > \`invite\` • \`support\` • \`about\`
 > \`ping\` • \`prefix\` • \`uptime\`
 > \`tinvites\` • \`sug\` • \`roleuser\`
