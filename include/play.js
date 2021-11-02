@@ -136,33 +136,17 @@ module.exports = {
     else thumb = song.thumbnail.url;
 
     try {
-      let embed = new MessageEmbed()
-        .setColor("#F0EAD6")
-        .setTitle("🎶 Playing Song!")
-        .setDescription(`Song: [\`${song.title}\`](${song.url})`)
-        .addField("`🩸 Requested by:", `>>> ${message.author.tag}`, true)
-        .setThumbnail(`https://img.youtube.com/vi/${song.url}/mqdefault.jpg`)
-        .addField(
-          "🌀 Queue:",
-          `>>> \`${queue.songs.length} songs\``,
-          true
-        )
-        .addField("🔊 Volume:", `>>> \`${queue.volume} %\``, true)
-        .addField(
-          "♾ Loop:",
-          `>>> ${queue.repeatMode
-            ? queue.repeatMode === 2
-              ? "✅ Queue"
-              : "✅ Song"
-            : "❌"
-          }`,
-          true
-        )
-        .addField(
-          "↪️ Autoplay:",
-          `>>> ${queue.autoplay ? "✅" : "❌"}`,
-          true
-        )
+      const newsong = new MessageEmbed()
+       .setTitle("🎶 "+song.title)
+        .setURL(song.url)
+        .setColor("BLACK")
+        .setImage(thumb)
+        .setThumbnail(``)
+         .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+        .addField("⏱ Length:", `\`${song.duration} Minutes\``, true)
+        .addField("🔊 Volume:", `\`100\``, true)
+
+      var playingMessage = await queue.textChannel.send(newsong);
 
       // .setAuthor(`Started playing: ${song.title}`,'https://i.redd.it/y3wduhwn4gd61.jpg')
       var playingMessage = await queue.textChannel.send(embed);
