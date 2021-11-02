@@ -26,7 +26,7 @@ module.exports = {
 
 [__**EDITOR ALVEN**__](https://discord.gg/am8FpWt3Yh)
 
-[__**Black Hat Staff**__](https://discord.gg/tgf)
+[__**Black Hat Staff**__](https://discord.gg/Z9Bu2xgezr)
 
 [__**Invite Bot**__](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)`)
 
