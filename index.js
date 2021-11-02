@@ -1986,9 +1986,8 @@ client.on(`message`, async (message) => {
     .setTimestamp()
     .setDescription(`
 
-[{Support}](https://discord.gg/black-hat)
+[{Support}](https://discord.gg/am8FpWt3Yh) | [{Invite}](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 
 > __**My Devloper :**__
 > <@!680407776593182735>
@@ -2030,11 +2029,8 @@ client.on(`message`, async (message) => {
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
     .setDescription (`
-{Links}
+{Links}  | [{Support}](https://discord.gg/am8FpWt3Yh) | [{Invite}](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)`)
 
-[{Support}](https://discord.gg/wTESwYkdwY)
--
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(`https://media.discordapp.net/attachments/827288710265045053/879419178933694504/image0.gif`)
     .setTitle(`**{Support Akira Bot }**`) 
