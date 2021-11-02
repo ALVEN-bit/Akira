@@ -82,7 +82,7 @@ module.exports = {
  
 | **Links**
 
-[__**Support**__](https://discord.gg/wTESwYkdwY) | [__**Invite**__](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
+[__**Support**__](https://discord.gg/wTESwYkdwY) | [**Invite**](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("BLACK");
