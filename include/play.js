@@ -135,7 +135,7 @@ module.exports = {
       const newsong = new MessageEmbed()
        .setTitle("🎶 "+song.title)
         .setURL(song.url)
-        .setColor("BLACK")
+        .setColor("RANDOM")
         .setImage(thumb)
         .setThumbnail(``)
          .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
@@ -188,7 +188,7 @@ module.exports = {
           .setDescription(`[**${song.title}**](${song.url})`)
           .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
           .addField("⏱ Length:", `\`${song.duration} Minutes\``, true)
-          .setColor("BLACK")
+          .setColor("RANDOM")
           //if its a stream
           if(ms >= 10000) {
             nowPlaying.addField("\u200b", "🔴 LIVE", false);
