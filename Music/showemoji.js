@@ -21,7 +21,7 @@ module.exports = {
       const Added = new MessageEmbed()
         .setTitle("Emoji Converter")
         .setColor("#146DF6")
-        .addField('<a:emoji_83:835511918906966017> ```Link```', `[Click Me](${Link})`)
+        .addField('```Link```', `[Click Me](${Link})`)
         .setImage(Link
         );
       return message.channel.send(Added);
