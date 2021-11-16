@@ -17,13 +17,57 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 //this fires when the BOT STARTS DO NOT TOUCH
 
 
+client.on("guildCreate", guild => { let channel = client.channels.cache.get("842093016156209182"); let embed = new MessageEmbed().setColor("#FF0000") .setAuthor(client.user.username, client.user.avatarURL()) .setTitle( `✅ Join Server`) .addField(" **Server Name**", `${guild.name}`) .addField(" **Server Owner**", `${guild.owner}`) .addField(" **Server Id**", `${guild.id}`) .addField(" **Member Count**", `${guild.memberCount}`) .setFooter(`${client.user.tag}`); channel.send(embed);}); client.on("guildDelete", guild => { let channel = client.channels.cache.get("842092942616559656"); let embed = new MessageEmbed() .setColor("#FF0000") .setAuthor(client.user.username, client.user.avatarURL()) .setTitle( `❌ Left Server`) .addField(" **Server Name**", `${guild.name}`) .addField(" **Server Owner**", `${guild.owner}`) .addField(" **Server Id**", `${guild.id}`) .addField(" **Member Count**", `${guild.memberCount}`) .setFooter(`${client.user.tag}`); channel.send(embed);});
+///////////
+client.on("message", emprator => {
+if (emprator.content === "slaw") {
+emprator.channel.send("**🌸 | سڵاو لە تۆش بەخێربێیت**"); 
+  }
+});
+client.on("message", SAEWAN => {
+  if (SAEWAN.content === "hello") {
+    SAEWAN.channel.send("**🌸 | Hello, welcome you too**");
+  }
+});
+client.on("message", SAEWAN => {
+  if (SAEWAN.content === "مرحبا") {
+    SAEWAN.channel.send("**🌸 | مرحبا، مرحبا بك أيضا**");
+  }
+});
+client.on("message", SAEWAN => {
+  if (SAEWAN.content === "ڕیکلام") {
+    SAEWAN.channel.send("**🌸 | دڵم چاوەڕێکە تا یەکێ جوابت دەداتەوە**");
+  }
+});
+client.on("message", SAEWAN => {
+  if (SAEWAN.content === "partner") {
+    SAEWAN.channel.send("**🌸 | Don't rush my heart until someone gives you a job**");
+  }
+});
+client.on("message", emprator => { 
+   if (emprator.content === "سڵاو") {
+      emprator.channel.send("**🌸 | سڵاو لە تۆش بەخێربێیت**"); 
+   }
+});
+client.on("message", emprator => {
+   if (emprator.content === "الاعلان") {
+      emprator.channel.send("**🌸 |لا تستعجل قلبي حتى يعطيك شخص ما وظيفة **"); 
+   }
+}); 
+client.on("message", SAEWAN => {
+  if (SAEWAN.content === "reklam") {
+    SAEWAN.channel.send("**🌸 | دڵم چاوەڕێکە تا یەکێ جوابت دەداتەوە**");
+  }
+});
+
+
 
 
 
 
 client.on("guildCreate" , DarkMan => {
 
-  if(DarkMan.memberCount < 78 ){
+  if(DarkMan.memberCount < 100 ){
 
     console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by Alven`)//by DarkMan
 
