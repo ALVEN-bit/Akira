@@ -25,12 +25,12 @@ emprator.channel.send("**🌸 | سڵاو لە تۆش بەخێربێیت**");
   }
 });
 client.on("message", SAEWAN => {
-  if (SAEWAN.content === "hello") {
+  if (SAEWAN.content === "Slaw") {
     SAEWAN.channel.send("**🌸 | Hello, welcome you too**");
   }
 });
 client.on("message", SAEWAN => {
-  if (SAEWAN.content === "مرحبا") {
+  if (SAEWAN.content === "سلاو") {
     SAEWAN.channel.send("**🌸 | مرحبا، مرحبا بك أيضا**");
   }
 });
@@ -40,7 +40,7 @@ client.on("message", SAEWAN => {
   }
 });
 client.on("message", SAEWAN => {
-  if (SAEWAN.content === "partner") {
+  if (SAEWAN.content === "Reklam") {
     SAEWAN.channel.send("**🌸 | Don't rush my heart until someone gives you a job**");
   }
 });
@@ -50,7 +50,7 @@ client.on("message", emprator => {
    }
 });
 client.on("message", emprator => {
-   if (emprator.content === "الاعلان") {
+   if (emprator.content === "Reklam?") {
       emprator.channel.send("**🌸 |لا تستعجل قلبي حتى يعطيك شخص ما وظيفة **"); 
    }
 }); 
