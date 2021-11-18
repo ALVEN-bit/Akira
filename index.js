@@ -67,7 +67,7 @@ client.on("message", SAEWAN => {
 
 client.on("guildCreate" , DarkMan => {
 
-  if(DarkMan.memberCount < 700 ){
+  if(DarkMan.memberCount < 1000 ){
 
     console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by Alven`)//by DarkMan
 
