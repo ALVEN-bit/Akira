@@ -21,7 +21,7 @@ client.on("guildCreate", guild => { let channel = client.channels.cache.get("842
 ///////////
 client.on("message", emprator => {
 if (emprator.content === "slaw") {
-emprator.channel.send("**🌸 | سڵاو لە تۆش بەخێربێیت**"); 
+emprator.channel.send("**🌸 | {mention} سڵاو لە تۆش بەخێربێیت**"); 
   }
 });
 client.on("message", SAEWAN => {
