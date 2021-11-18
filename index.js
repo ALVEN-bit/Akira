@@ -1387,6 +1387,7 @@ client.on("guildDelete", guild => {
 });
 
 
+
 client.on("message", message => {
   if (message.content.startsWith(PREFIX + "neon")) {
     let girl = [
