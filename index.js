@@ -26,7 +26,7 @@ emprator.channel.send("**🌸 | {mention} سڵاو لە تۆش بەخێربێی�
 });
 client.on("message", SAEWAN => {
   if (SAEWAN.content === "Slaw") {
-    SAEWAN.channel.send("**🌸 | Hello, welcome you too**");
+    SAEWAN.channel.send("**🌸 | [user] سڵاو لە تۆش بەخێربێیت**");
   }
 });
 client.on("message", SAEWAN => {
