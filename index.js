@@ -21,17 +21,17 @@ client.on("guildCreate", guild => { let channel = client.channels.cache.get("842
 ///////////
 client.on("message", emprator => {
 if (emprator.content === "slaw") {
-emprator.channel.send(" {mention} **🌸 | سڵاو لە تۆش بەخێربێیت**"); 
+emprator.channel.send("  **🌸 | سڵاو لە تۆش بەخێربێیت**"); 
   }
 });
 client.on("message", SAEWAN => {
   if (SAEWAN.content === "Slaw") {
-    SAEWAN.channel.send(" [user] **🌸 |  سڵاو لە تۆش بەخێربێیت**");
+    SAEWAN.channel.send("  **🌸 |  سڵاو لە تۆش بەخێربێیت**");
   }
 });
 client.on("message", SAEWAN => {
   if (SAEWAN.content === "سلاو") {
-    SAEWAN.channel.send("**🌸 | مرحبا، مرحبا بك أيضا**");
+    SAEWAN.channel.send("**🌸 |  سڵاو لە تۆش بەخێربێیت**");
   }
 });
 client.on("message", SAEWAN => {
@@ -41,7 +41,7 @@ client.on("message", SAEWAN => {
 });
 client.on("message", SAEWAN => {
   if (SAEWAN.content === "Reklam") {
-    SAEWAN.channel.send("**🌸 | Don't rush my heart until someone gives you a job**");
+    SAEWAN.channel.send("**🌸 | دڵم چاوەڕێکە تا یەکێ جوابت دەداتەوە**");
   }
 });
 client.on("message", emprator => { 
@@ -51,7 +51,7 @@ client.on("message", emprator => {
 });
 client.on("message", emprator => {
    if (emprator.content === "Reklam?") {
-      emprator.channel.send("**🌸 |لا تستعجل قلبي حتى يعطيك شخص ما وظيفة **"); 
+      emprator.channel.send("**🌸 | دڵم چاوەڕێکە تا یەکێ جوابت دەداتەوە**"); 
    }
 }); 
 client.on("message", SAEWAN => {
