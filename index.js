@@ -144,41 +144,6 @@ client.on('message', message => {
     });
 
 
-client.on("message", message => {
-  if (message.content.startsWith(PREFIX + "user")) {
-    if (!message.channel.guild) return;
-    let user = message.mentions.users.first();
-    var men = message.mentions.users.first();
-    var heg;
-    if (men) {
-      heg = men;
-    } else {
-      heg = message.author;
-    }
-    var mentionned = message.mentions.members.first();
-    var h;
-    if (mentionned) {
-      h = mentionned;
-    } else {
-      h = message.member;
-    }
-    const embed = new Discord.MessageEmbed()
-        .setThumbnail(heg.avatarURL())
-        .addField("**ID**", `${heg.id}`, true)
-        .addField("**Name**", `${heg.username}`, true)
-        .addField('**Discrim Account**',"**#" +  `${heg.discriminator}**`,true)
-        .addField("**Created Account At**", `${heg.createdAt}`, true)
-        .addField("**Time Join Server**", message.member.joinedAt.toLocaleString())    
-        .addField("**Bot**", `${heg.bot}`, true)
-        .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
-        .setColor("#9700ff")     
-        .setFooter("By ALVEN");
-  
-    message.channel.send(embed);
-  }
-});
-
-
 client.on('message' , message => {
       if(message.author.bot) return;
      
