@@ -73,13 +73,16 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
- | **Game Commands**
+| **Game Commands**
 > \`kiss\` • \`slap\` • \`hug\`
 > \`feed\` • \`cuddle\` • \`pat\`
 > \`poke\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
- 
+
+| **Giveaway Commands**
+> \`giveaway SetTime(d,h,m) #setChannel\`
+
 | **Links**
 
 [Support](https://discord.gg/wTESwYkdwY) | [Invite](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
