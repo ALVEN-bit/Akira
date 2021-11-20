@@ -38,19 +38,23 @@ client.on("message", message => {
       "https://cdn.discordapp.com/attachments/755893014915711047/829842259709132830/ContaAbimiz_228.gif",
       "https://cdn.discordapp.com/attachments/755893014915711047/829842189344309308/ContaAbimiz_71.gif",
       "https://cdn.discordapp.com/attachments/755893014915711047/829244439310106664/Nikolaj_Coster-Waldau_Gif_Hunt.gif"
-    ];
+       ];
 
     message.channel
       .send({
         embed: {
-          description: `**Gif Smoke**`,
-          footer: `Requested by ${message.author.username}`,
-          color: `#FC00FF`,
+          description: `${message.author.username} **Smoke GIF**`,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
           }
         }
       })
+      .catch(e => {
+        client.log.error(e);
+      });
+  }
+});
+
 
 
 
