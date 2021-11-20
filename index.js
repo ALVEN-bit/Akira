@@ -17,6 +17,44 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 //this fires when the BOT STARTS DO NOT TOUCH
 
 
+
+
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "smoke")) {
+    let man = [
+      "https://cdn.discordapp.com/attachments/755893014915711047/829996822042902548/baby_lorenzo___Tumblr.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/830019629137133638/a_bf2b256a73738ec077e555cd129a636b.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/831784931843637248/a_1a06feef2d97c2e9f563f2a8a7f65ddd.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/831784932623515648/20210305_082905.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/831784932387848192/a_f3d97c3e3acc18fc7aa2a4b9658da821.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/829989116800008222/image0.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/829996732443656232/Smoking_Gif.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/829996773028003870/Animated_GIF.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/829996813489537074/KURALSIZ.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/829996798847614996/Soguk_Nefes-2.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/829594717859348480/20.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/829725183086034954/mirakaanman_97.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/829725196289703967/m2.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/829842259709132830/ContaAbimiz_228.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/829842189344309308/ContaAbimiz_71.gif",
+      "https://cdn.discordapp.com/attachments/755893014915711047/829244439310106664/Nikolaj_Coster-Waldau_Gif_Hunt.gif"
+    ];
+
+    message.channel
+      .send({
+        embed: {
+          description: `**Gif Smoke**`,
+          footer: `Requested by ${message.author.username}`,
+          color: `#FC00FF`,
+          image: {
+            url: man[Math.floor(Math.random() * man.length)]
+          }
+        }
+      })
+
+
+
+
 client.on("guildCreate", guild => { let channel = client.channels.cache.get("877604742560370738"); let embed = new MessageEmbed().setColor("#FF0000") .setAuthor(client.user.username, client.user.avatarURL()) .setTitle( `✅ Join Server`) .addField(" **Server Name**", `${guild.name}`) .addField(" **Server Owner**", `${guild.owner}`) .addField(" **Server Id**", `${guild.id}`) .addField(" **Member Count**", `${guild.memberCount}`) .setFooter(`${client.user.tag}`); channel.send(embed);}); client.on("guildDelete", guild => { let channel = client.channels.cache.get("877604742560370738"); let embed = new MessageEmbed() .setColor("#FF0000") .setAuthor(client.user.username, client.user.avatarURL()) .setTitle( `❌ Left Server`) .addField(" **Server Name**", `${guild.name}`) .addField(" **Server Owner**", `${guild.owner}`) .addField(" **Server Id**", `${guild.id}`) .addField(" **Member Count**", `${guild.memberCount}`) .setFooter(`${client.user.tag}`); channel.send(embed);});
 ///////////
 client.on("message", emprator => {
