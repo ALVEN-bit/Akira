@@ -56,7 +56,7 @@ module.exports = {
 > \`boy\` • \`girl\` • \`couple\`
 > \`sad\` • \`cartoon\` • \`anime\`
 > \`neon\` • \`smoking\` • \`baby\`
-> \`animal\`
+> \`animal\` • \`smoki\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
