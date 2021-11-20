@@ -1,13 +1,13 @@
 const { MessageEmbed } = require("discord.js");
 const ms = require("ms");
 module.exports = {
-  name: "start",
+  name: "giveaway",
   description: "Create a simple giveaway",
   cooldown: 1.5,
   usage: "<time> <winner> <prize>",
   category: "fun",
   async execute(message, args) {
-    if (!args[0]) return message.channel.send(`You did not specify your time!`);
+    if (!args[0]) return message.channel.send(`\`Set Time\`  -  (d , h , m)`);
     if (
       !args[0].endsWith("d") &&
       !args[0].endsWith("h") &&
@@ -20,20 +20,20 @@ module.exports = {
     let channel = message.mentions.channels.first();
     if (!channel)
     return message.channel.send(
-        `I could not find that channel in the guild!`
+        `\`Select a channel\` - ex: #channel`
       );
     let prize = args.slice(2).join(" ");
-    if (!prize) return message.channel.send(`No prize specified!`);
+    if (!prize) return message.channel.send(`\`Set Prize!\` - ex: 100k credit`);
     message.channel.send(`🎉**|Giveaway created in** ${channel}`);
     let Embed = new MessageEmbed()
-      .setTitle(`<a:giveaway:817399361201766410> New giveaway!`)
+      .setTitle(`New giveaway!`)
       .setDescription(
         `**${prize}**
-React with 🎉 to enter!
-Hosted by: ${message.author}`)
+React: 🎉 to win!
+Host: ${message.author}`)
       .setTimestamp()
-      .setFooter(`Ends at`)
-      .setColor(`#146DF6`);
+      .setFooter(`Start at`)
+      .setColor(`RANDOM`);
     //delete the Command
     message.delete({timeout: 300})
     let m = await channel.send(Embed);
@@ -52,8 +52,8 @@ Hosted by: ${message.author}`)
         .random();
       channel.send(
         `**The winner of the giveaway for**
-#️⃣|${channel}
-<a:winner:817425780992114708>|${message.author}`
+\`giveaway\`
+🏅|${message.author}`
       );
     }, ms(args[0]));
   },
