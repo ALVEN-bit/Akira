@@ -89,7 +89,28 @@ module.exports = {
 | **Giveaway Commands**
 > \`giveaway SetTime(d,h,m) #setChannel\`
 
-| **Links**
+◈ ━━━━━━━━ ● ━━━━━━━━ ◈
+
+| **Security Commands**
+
+> | **Security Number**
+> \`${prefix}anti kick\`: **Number**
+> \`${prefix}anti ban\`: **Number**
+> \`${prefix}anti channelD\`: **Number**
+> \`${prefix}anti channelC\`: **Number**
+> \`${prefix}anti roleD\`: **Number**
+> \`${prefix}anti roleC\`: **Number**
+> \`${prefix}anti time\`: **Number**
+
+> **Security On/Off**
+> \`${prefix}anti bot\`: **on-off**
+
+> | **Security**
+> \`${prefix}settings\`
+> \`${prefix}punishment\`
+
+
+> | **Links**
 
 [Support](https://discord.gg/wTESwYkdwY) | [Invite](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 `)
