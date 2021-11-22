@@ -101,14 +101,11 @@ module.exports = {
 > \`anti roleD\`: **Number**
 > \`anti roleC\`: **Number**
 > \`anti time\`: **Number**
-
 > **Security On/Off**
 > \`anti bot\`: **on-off**
-
 > | **Security**
 > \`settings\`
 > \`punishment\`
-
 
 > | **Links**
 
