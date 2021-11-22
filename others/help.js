@@ -94,20 +94,20 @@ module.exports = {
 | **Security Commands**
 
 > | **Security Number**
-> \`${prefix}anti kick\`: **Number**
-> \`${prefix}anti ban\`: **Number**
-> \`${prefix}anti channelD\`: **Number**
-> \`${prefix}anti channelC\`: **Number**
-> \`${prefix}anti roleD\`: **Number**
-> \`${prefix}anti roleC\`: **Number**
-> \`${prefix}anti time\`: **Number**
+> \`anti kick\`: **Number**
+> \`anti ban\`: **Number**
+> \`anti channelD\`: **Number**
+> \`anti channelC\`: **Number**
+> \`anti roleD\`: **Number**
+> \`anti roleC\`: **Number**
+> \`anti time\`: **Number**
 
 > **Security On/Off**
-> \`${prefix}anti bot\`: **on-off**
+> \`anti bot\`: **on-off**
 
 > | **Security**
-> \`${prefix}settings\`
-> \`${prefix}punishment\`
+> \`settings\`
+> \`punishment\`
 
 
 > | **Links**
