@@ -1770,51 +1770,6 @@ reaction2.on("collect", r => {
 }
 });
 
-client.on("message", message => {
-  if (!message.content.startsWith(PREFIX)) return;
-  if (!message.channel.guild)
-    return 
-  let command = message.content.split(" ")[0];
-  command = command.slice(PREFIX.length);
-  if (command === "g") {
-    var sabotage = message.mentions.users.first();
-    if (sabotage == message.author)
-      return message.reply(`**No please menition user**`);
-    if (sabotage === client.user) return message.reply(`**Why?**`);
-    if (sabotage < 1) {
-      message.delete();
-      return message.channel.sendMessage(
-        "Put something to kill like mention your username or use an emoji"
-      );
-    }
-    if (!sabotage)
-      return message.channel.send(`Please Mention A Member to Kill :warning:`);
-    message.channel.send("▄︻̷̿┻̿═━一 ${sabotage").then(msg => {
-      msg.edit('    **`___SLOTS___  `**                                                    <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554>                                                                      `|         ||         |` ');
-      setTimeout(function() {
-        msg.edit('  **`___SLOTS___  `**                                                    <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554>                                                                      `|         ||         |` ');
-      }, 1000);
-      setTimeout(function() {
-        msg.edit('  **`___SLOTS___  `**                                                    <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554>                                                                      `|         ||         |` ');
-      }, 2000);
-      setTimeout(function() {
-        msg.edit('  **`___SLOTS___  `**                                                    <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554>                                                                      `|         ||         |` ');
-      }, 3000);
-      setTimeout(function() {
-        msg.edit('  **`___SLOTS___  `**                                                    <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554>                                                                      `|         ||         |` ');
-      }, 4000);
-      setTimeout(function() {
-        msg.edit('  **`___SLOTS___  `**                                                    <:slots2:421472583347732511> <:slots1:421472583410515969> <:slots3:421472582924238869>                                                                               `|         ||         |` ');
-      }, 5000);
-      msg.delete(6000);
-      message.delete();
-    });
-    message.channel
-      .send("**** The crime has been successfully hidden 🕳 **")
-      .then(msg => msg.delete(7000));
-  }
-});
-
 client.on('message',async message => {
   if(message.content.startsWith(PREFIX + "roleuser")) { 
  
@@ -2020,7 +1975,7 @@ client.on(`message`, async (message) => {
 
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
-    message.reply(new Discord.MessageEmbed().setColor("RANDOM").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
+    message.reply(new Discord.MessageEmbed().setColor("RANDOM").setAuthor(``, message.author.displayAvatarURL({dynamic:true})));
   } 
 
 
