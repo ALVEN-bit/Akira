@@ -67,9 +67,9 @@ module.exports = {
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
  | **Text Commands**
-> \`textkurd\` • \`textengli\`
-> \`textarab\` • \`textturk\`
-> \`textpers\`
+> \`textkurd\` • \`textenglish\`
+> \`textarabic\` • \`textturk\`
+> \`textpersian\`
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
