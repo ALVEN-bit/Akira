@@ -91,22 +91,6 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
-| **Security Commands**
-
-> | **Security Number**
-> \`anti kick\`: **Number**
-> \`anti ban\`: **Number**
-> \`anti channelD\`: **Number**
-> \`anti channelC\`: **Number**
-> \`anti roleD\`: **Number**
-> \`anti roleC\`: **Number**
-> \`anti time\`: **Number**
-> **Security On/Off**
-> \`anti bot\`: **on-off**
-> | **Security**
-> \`settings\`
-> \`punishment\`
-
 > | **Links**
 
 [Support](https://discord.gg/wTESwYkdwY) | [Vote](https://top.gg/bot/828308993172045845/vote) | [Invite](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
