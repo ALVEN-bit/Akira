@@ -109,7 +109,7 @@ module.exports = {
 
 > | **Links**
 
-[Support](https://discord.gg/wTESwYkdwY) | [Invite](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
+[Support](https://discord.gg/wTESwYkdwY) | [Vote](https://top.gg/bot/828308993172045845/vote) | [Invite](https://discord.com/api/oauth2/authorize?client_id=828308993172045845&permissions=8&scope=bot)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("BLACK");
