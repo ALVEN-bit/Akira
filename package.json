@@ -9,6 +9,9 @@
   "author": "Tomato#6966",
   "license": "GPL-3.0",
   "dependencies": {
+    "node-fetch": "^2.6.1",
+    "@sentry/node": "^6.2.2",
+    "discord-backup": "^2.4.1",
     "@discordjs/opus": "^0.3.3",
     "discord-ytdl-core": "^4.1.3",
     "discord.js": "^12.4.1",
