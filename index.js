@@ -1896,7 +1896,7 @@ client.on(`ready`, () => {
         if (member.voice.channel.members.size === 1) 
         { return member.voice.channel.join(); }
       });
-      client.user.setActivity(`Type: ${PREFIX}help `, { type: "PLAYING"});
+      client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server, `, { type: "PLAYING"});
    
    
   
