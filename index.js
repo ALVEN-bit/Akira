@@ -1938,7 +1938,15 @@ client.on(`message`, async (message) => {
 
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
-    message.reply(new Discord.MessageEmbed().setColor("RANDOM").setAuthor(``, message.author.displayAvatarURL({dynamic:true})));
+    message.reply(new Discord.MessageEmbed().setColor("RANDOM").setAuthor(`**__Hello,__**
+> \`Look at Bot about command\`
+__Report__:
+> \`You had any questions or any criticism or suggestions about your bot send you a\`
+> ( \`Alvenᵇˡᵃᶜᵏʰᵃᵗ#6019 \` ) \`letter\`
+__About the bot__:
+> \`Moderation, Copy Server, Economy, Fun, Game ,\`
+> \`General, Images, Texts, Info, Music\`
+`, message.author.displayAvatarURL({dynamic:true})));
   } 
 
 
