@@ -52,12 +52,6 @@ module.exports = {
 
 ◈ ━━━━━━━━ ● ━━━━━━━━ ◈
 
- |**Copy Servar**
-> \`backup create\`
-> \`backup load\`
-
-◈ ━━━━━━━━ ● ━━━━━━━━ ◈
-
  | **Gif Commands**
 > \`boy\` • \`girl\` • \`couple\`
 > \`sad\` • \`cartoon\` • \`anime\`
