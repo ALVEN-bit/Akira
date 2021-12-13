@@ -18,7 +18,23 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
 
 
 
-
+client.on("message", message => {
+  if (message.channel.type === "dm") {
+    if (message.content.startsWith("https://discord.gg/")) {  
+message.author.send(`**تـۆش ریکلام بۆ ئـەم سێرڤـەرە بکە **  
+https://discord.gg/HYdBCmQXzV`); 
+ 
+ 
+ 
+ 
+      client.channels.cache.get("862372446888001558").send(
+ 
+        `>  send by <@${message.author.id}> 
+${message.content}`
+      );
+    }
+  }
+  })
 
 
 
