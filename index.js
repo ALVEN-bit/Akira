@@ -230,26 +230,6 @@ client.on("message", message => {
 
 
 
-client.on("message", message => {
-  if (message.channel.type === "dm") {
-    if (message.content.startsWith("https://discord.gg/")) {  
-message.author.send(`**تـۆش ریکلام بۆ ئـەم سێرڤـەرە بکە **  
-https://discord.gg/HYdBCmQXzV`); 
- 
- 
- 
- 
-      client.channels.cache.get("862372446888001558").send(
- 
-        `>  send by <@${message.author.id}> 
-${message.content}`
-      );
-    }
-  }
-  })
-
-
-
 client.on("guildCreate", guild => { let channel = client.channels.cache.get("877604742560370738"); let embed = new MessageEmbed().setColor("#FF0000") .setAuthor(client.user.username, client.user.avatarURL()) .setTitle( `✅ Join Server`) .addField(" **Server Name**", `${guild.name}`) .addField(" **Server Owner**", `${guild.owner}`) .addField(" **Server Id**", `${guild.id}`) .addField(" **Member Count**", `${guild.memberCount}`) .setFooter(`${client.user.tag}`); channel.send(embed);}); client.on("guildDelete", guild => { let channel = client.channels.cache.get("877604742560370738"); let embed = new MessageEmbed() .setColor("#FF0000") .setAuthor(client.user.username, client.user.avatarURL()) .setTitle( `❌ Left Server`) .addField(" **Server Name**", `${guild.name}`) .addField(" **Server Owner**", `${guild.owner}`) .addField(" **Server Id**", `${guild.id}`) .addField(" **Member Count**", `${guild.memberCount}`) .setFooter(`${client.user.tag}`); channel.send(embed);});
 ///////////
 client.on("message", emprator => {
